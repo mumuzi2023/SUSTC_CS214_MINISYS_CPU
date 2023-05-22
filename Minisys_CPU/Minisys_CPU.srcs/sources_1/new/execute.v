@@ -75,7 +75,7 @@ always @* begin  // 6种移位指令
     always @* begin
         //set type operation (slt, slti, sltu, sltiu)
         if(((ALU_ctl==3'b111) && (Exe_code[3]==1))||((ALU_ctl[2:1]==2'b11) && (I_format==1))) 
-            ALU_Result = (Ainput -Binput<0)?1:0;
+            ALU_Result = (Ainput - Binput<0)?1:0;
         //lui operation
         else if((ALU_ctl==3'b101) && (I_format==1))
             ALU_Result[31:0] = {{Binput[15:0]},{16{1'b0}}};   //lui data
@@ -87,7 +87,7 @@ always @* begin  // 6种移位指令
             ALU_Result = ALU_output_mux[31:0];   //otherwise
     end
  
-    assign Branch_Addr = PC_plus_4[31:2] +  Sign_extend[31:0];
+    assign Branch_Addr = PC_plus_4[31:2] + Sign_extend[31:0];
     assign Addr_Result = Branch_Addr[31:0];
     assign Zero = (ALU_output_mux[31:0] == 32'h00000000) ? 1'b1 : 1'b0;
     

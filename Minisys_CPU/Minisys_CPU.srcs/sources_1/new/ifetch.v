@@ -56,7 +56,7 @@ always @* begin
 if(((Branch == 1) && (Zero == 1 )) || ((nBranch == 1) && (Zero == 0))) // beq, bne condition satisfied
     Next_PC = Addr_result << 2;// the calculated new value for PC ,check out if the indexes omitted two bits.
 else if(Jr == 1)
-    Next_PC = Read_data_1 << 2; // the value of $31 register
+    Next_PC = Read_data_1; // the value of $31 register
 else 
     Next_PC = PC + 32'h0000_0004; // PC+4
 end
@@ -78,7 +78,7 @@ else begin
 end
 end
 
-assign link_addr = PC + 4;
-assign branch_base_addr = PC + 4;
+assign link_addr = PC + 32'h00000004;
+assign branch_base_addr = PC + 32'h00000004;
 
 endmodule
