@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 // Date        : Mon May 22 14:38:14 2023
 // Host        : DESKTOP-9VRBO84 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ prgrom_stub.v
 // Design      : prgrom
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tfgg484-1
@@ -14,7 +14,7 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_4_1,Vivado 2017.4" *)
-module prgrom(clka, wea, addra, dina, clkb, enb, addrb, doutb)
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(clka, wea, addra, dina, clkb, enb, addrb, doutb)
 /* synthesis syn_black_box black_box_pad_pin="clka,wea[0:0],addra[13:0],dina[31:0],clkb,enb,addrb[13:0],doutb[31:0]" */;
   input clka;
   input [0:0]wea;

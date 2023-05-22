@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/computer_organization/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1'
+HD_PWD='D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

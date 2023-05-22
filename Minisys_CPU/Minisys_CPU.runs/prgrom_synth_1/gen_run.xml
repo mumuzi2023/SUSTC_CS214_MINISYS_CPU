@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="prgrom_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1684420429">
+<GenRun Id="prgrom_synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1684737368">
   <File Type="PA-TCL" Name="prgrom.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="prgrom_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="prgrom_reports.tcl"/>
@@ -36,9 +36,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
