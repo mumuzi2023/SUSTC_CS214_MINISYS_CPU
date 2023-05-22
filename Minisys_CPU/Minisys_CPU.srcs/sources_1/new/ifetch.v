@@ -20,10 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ifetch(Instruction, branch_base_addr, link_addr, clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
-output[31:0] Instruction; // the instruction fetched from this module to Decoder and Controller
+module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
+output[31:0] Instruction_o; // the instruction fetched from this module to Decoder and Controller
 output[31:0] branch_base_addr; // (pc+4) to ALU which is used by branch type instruction
 output[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
+output[31:0] cur_pc;
+input[31:0] Instruction_i;
 //from CPU TOP
 input clock, reset; // Clock and reset
 // from ALU
@@ -40,16 +42,7 @@ input Jr; // while Jr is 1, it means current instruction is jr
 
 /*
 it is just a scheme, the detail should be changed according to the actual implementation
-
 */
-
-prgrom instmem(
-        .clka(clock),         // input wire clka
-        .addra(PC[15:2]),     // input wire [13 : 0] addra
-        .douta(Instruction)         // output wire [31 : 0] douta
-);
-
-
 
 reg[31:0] PC,Next_PC;
 always @* begin
@@ -69,7 +62,7 @@ if(reset == 1)
 else begin
 
     if((Jmp == 1) || (Jal == 1)) begin
-        PC <= {PC[31:28],Instruction[27:0]<<2};
+        PC <= {PC[31:28],Instruction_i[27:0]<<2};
     end
     else begin
         PC <= Next_PC;
@@ -80,5 +73,7 @@ end
 
 assign link_addr = PC + 32'h00000004;
 assign branch_base_addr = PC + 32'h00000004;
+assign Instruction_o = Instruction_i;
+assign cur_pc = PC;
 
 endmodule
