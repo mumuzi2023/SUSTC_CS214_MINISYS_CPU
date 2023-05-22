@@ -32,7 +32,7 @@ output RegWrite; // 1 indicate write register(R,I(lw)), otherwise it's not
 output MemWrite; // 1 indicate write data memory, otherwise it's not
 output ALUSrc; // 1 indicate the 2nd data is immidiate (except "beq","bne")
 output Sftmd; // 1 indicate the instruction is shift instruction
-output ALUop;// 
+output[1:0] ALUop;// 
 /* if the instruction is R-type or I_format, ALUOp is 2'b10;
 if the instruction is"beq" or "bne", ALUOp is 2'b01£»
 if the instruction is"lw" or "sw", ALUOp is 2'b00£»
