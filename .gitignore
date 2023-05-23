@@ -1,6 +1,4 @@
 
-Minisys_CPU/Minisys_CPU.cache/wt/gui_handlers.wdf
-Minisys_CPU/Minisys_CPU.cache/wt/gui_handlers.wdf
-Minisys_CPU/Minisys_CPU.cache/wt/gui_handlers.wdf
-Minisys_CPU/Minisys_CPU.cache/wt/java_command_handlers.wdf
-Minisys_CPU/Minisys_CPU.cache/wt/webtalk_pa.xml
+*.wdf
+*.jou
+*.log
