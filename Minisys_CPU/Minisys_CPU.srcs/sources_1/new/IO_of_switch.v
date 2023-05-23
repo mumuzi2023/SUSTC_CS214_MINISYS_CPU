@@ -51,5 +51,5 @@ always @(posedge clk)begin
             number_o<=number_in;
         end
     end
-endz
+end
 endmodule
