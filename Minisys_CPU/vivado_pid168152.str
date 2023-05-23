@@ -1,0 +1,892 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 168152
+License: Customer
+
+Current time: 	Mon May 22 20:52:09 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Gaozr
+User home directory: C:/Users/Gaozr
+User working directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.log
+Vivado journal file location: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.jou
+Engine tmp dir: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/.Xil/Vivado-168152-Gao
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 586 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\myCodes\vivado\computer_organization\SUSTC_CS214_MINISYS_CPU\Minisys_CPU\Minisys_CPU.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 59 MB (+59749kb) [00:00:07]
+// [Engine Memory]: 510 MB (+383801kb) [00:00:07]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 542 MB (+6706kb) [00:00:08]
+// [GUI Memory]: 69 MB (+6660kb) [00:00:08]
+// [GUI Memory]: 91 MB (+19492kb) [00:00:09]
+// [Engine Memory]: 576 MB (+6928kb) [00:00:09]
+// Tcl Message: open_project D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/lib_addi_ip_core/SEU_CSE_507_user_uart_bmpg_1.3'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 80 MB. Current time: 5/22/23 8:52:09 PM CST
+// [Engine Memory]: 609 MB (+3962kb) [00:00:10]
+// Project name: Minisys_CPU; location: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU; part: xc7a100tfgg484-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 96 MB (+962kb) [00:00:56]
+// Elapsed time: 259 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "RAM_synth_1 ; RAM ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 31 ; 2 ; 14.5 ; 0 ; 0 ; Thu May 18 22:07:29 CST 2023 ; 00:04:32 ; Vivado Synthesis Defaults (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xc7a100tfgg484-1 ; Vivado Synthesis Defaults", 3, (String) null, 5, false); // ax (O, cj)
+// PAPropertyPanels.initPanels (RAM_synth_1) elapsed time: 0.3s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7a100tfgg484-1 ; Default settings for Implementation.", 1, (String) null, 5, false); // ax (O, cj)
+// [Engine Memory]: 643 MB (+3518kb) [00:04:31]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2, "Out-of-Context Module Runs", 0, true); // ax (O, cj) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 42 MB. Current time: 5/22/23 8:56:34 PM CST
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v)]", 3, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v)]", 3, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("program_rom.v", 68, 211); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("program_rom.v", 61, 214); // cd (w, cj)
+selectCodeEditor("program_rom.v", 61, 214, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("program_rom.v", 61, 214); // cd (w, cj)
+// Elapsed time: 164 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // Z (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_UNSELECT_TYPE, "Unselect Type"); // Z (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (f, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// [Engine Memory]: 677 MB (+2511kb) [00:08:13]
+// [GUI Memory]: 102 MB (+1325kb) [00:08:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 61 MB. Current time: 5/22/23 9:00:15 PM CST
+// Elapsed time: 15 seconds
+dismissDialog("Settings"); // v (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New Project..."); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// g (cj): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, g)
+// Elapsed time: 54 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "TESTBENCH_FOR_UART", true); // X (N, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+// [GUI Memory]: 110 MB (+2223kb) [00:09:35]
+// Elapsed time: 10 seconds
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", (String) null); // OverlayTextField (al, g)
+// Elapsed time: 20 seconds
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", (String) null); // OverlayTextField (al, g)
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", (String) null); // OverlayTextField (al, g)
+// Elapsed time: 12 seconds
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", (String) null); // OverlayTextField (al, g)
+// Elapsed time: 13 seconds
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", "xc7a100tfgg484-1"); // OverlayTextField (al, g)
+selectTable(PAResourceOtoP.PartChooser_PARTS, "xc7a100tfgg484-1 ; 484 ; 285 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 4 ; 4 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "285", 2); // ah (O, g)
+selectButton("NEXT", "Next >"); // JButton (h, g)
+// bs (g):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project TESTBENCH_FOR_UART D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/TESTBENCH_FOR_UART -part xc7a100tfgg484-1 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/TESTBENCH_FOR_UART' 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 122 MB (+7528kb) [00:10:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish"); // JButton (h, g)
+// 'g' command handler elapsed time: 130 seconds
+// [GUI Memory]: 131 MB (+2805kb) [00:10:40]
+dismissDialog("Create Project"); // bs (g)
+dismissDialog("New Project"); // g (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 140 MB (+2085kb) [00:10:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 707 MB. GUI used memory: 78 MB. Current time: 5/22/23 9:02:45 PM CST
+// [Engine Memory]: 711 MB (+3kb) [00:11:44]
+// Elapsed time: 278 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v), instmem : prgrom (prgrom.xci)]", 4, false); // B (D, cj)
+// Tcl Message: current_project Minisys_CPU 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v)]", 3, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v), instmem : prgrom (prgrom.xci)]", 4, false); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, dmem32.coe]", 11, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, prgmip32.coe]", 12, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, execute (execute.v)]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, execute (execute.v)]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, execute (execute.v)]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 195 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_bmpg_0 (uart_bmpg_0.xci)]", 9, false); // B (D, cj)
+// Elapsed time: 110 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "execute.v", 2); // k (j, cj)
+// [GUI Memory]: 162 MB (+15758kb) [00:25:30]
+// [GUI Memory]: 172 MB (+2262kb) [00:26:33]
+// Elapsed time: 352 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cj) - Node
+// Elapsed time: 308 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cj)
+closeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ax (aF, cj)
+selectTab((HResource) null, (HResource) null, "Log", 1); // aF (Q, cj)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // B (f, c)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File..."); // ac (ai, c)
+// Tcl Command: 'file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1'
+// B (cj): Create Constraints File: addNotify
+// Tcl Message: file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1 
+// Elapsed time: 12 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "MINISYS_XDC", true); // X (C, B)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (B)
+dismissDialog("Create Constraints File"); // B (cj)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 22 seconds
+// Tcl Command: 'file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new'
+dismissDialog("Add Sources"); // c (cj)
+// Tcl Message: file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new 
+// Tcl Message: close [ open D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MINISYS_XDC.xdc]", 15, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, MINISYS_XDC.xdc]", 15, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("MINISYS_XDC.xdc", 208, 108); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cj): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 22 21:24:45 2023] Launched synth_1... Run output will be captured here: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/runme.log [Mon May 22 21:24:45 2023] Launched impl_1... Run output will be captured here: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectCodeEditor("MINISYS_XDC.xdc", 441, 59); // cd (w, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("data_memory.v", 114, 91); // cd (w, cj)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectCodeEditor("data_memory.v", 304, 139); // cd (w, cj)
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 798 MB. GUI used memory: 87 MB. Current time: 5/22/23 9:27:21 PM CST
+// [Engine Memory]: 938 MB (+200454kb) [00:35:24]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,021 MB. GUI used memory: 87 MB. Current time: 5/22/23 9:27:25 PM CST
+// [Engine Memory]: 1,035 MB (+53058kb) [00:35:26]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.9s
+// [Engine Memory]: 1,110 MB (+24123kb) [00:35:28]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.5s
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xc7a100tfgg484-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1243.168 ; gain = 0.762 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1243.168 ; gain = 0.762 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 1335.227 ; gain = 411.289 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dO' command handler elapsed time: 18 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bs (cj)
+// [Engine Memory]: 1,167 MB (+1176kb) [00:35:39]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "BRAM_PORTA_26184 (98) ; (Multiple) ;  ;  ; (Multiple) ; (Multiple) ; default (LVCMOS18) ; 1.8 ;  ; (Multiple) ; (Multiple) ; NONE ; (Multiple) ; ", 1); // G (O, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,204 MB. GUI used memory: 132 MB. Current time: 5/22/23 9:27:46 PM CST
+// [Engine Memory]: 1,280 MB (+57094kb) [00:35:48]
+// RouteApi::initDelayMediator elapsed time: 18s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,570 MB (+237355kb) [00:35:49]
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "BRAM_PORTA_26184 (98) ; (Multiple) ;  ;  ; (Multiple) ; (Multiple) ; default (LVCMOS18) ; 1.8 ;  ; (Multiple) ; (Multiple) ; NONE ; (Multiple) ; ", 1, "default (LVCMOS18)", 6, true); // G (O, cj) - Node
+// TclEventType: SIGNAL_MODIFY
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "address (32) ; IN ;  ;  ; (Multiple) ; (Multiple) ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 2, "LVCMOS33", 6, true); // G (O, cj) - Node
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (address) elapsed time: 0.3s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 131 MB. Current time: 5/22/23 9:28:01 PM CST
+// [GUI Memory]: 184 MB (+3375kb) [00:45:27]
+// [GUI Memory]: 193 MB (+524kb) [00:45:32]
+// [GUI Memory]: 213 MB (+9865kb) [00:46:02]
+// [GUI Memory]: 224 MB (+958kb) [00:47:59]
+// [GUI Memory]: 236 MB (+1130kb) [00:52:15]
+// Elapsed time: 986 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cj) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 158 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "IO_OF_"); // X (N, F)
+// Elapsed time: 26 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "IO_of_switch"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 193 seconds
+dismissDialog("Add Sources"); // c (cj)
+// Tcl Message: close [ open D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/IO_of_switch.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/IO_of_switch.v 
+// I (cj): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IO_of_switch (IO_of_switch.v)]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IO_of_switch (IO_of_switch.v)]", 5, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 138, 114); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 98, 182); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 72, 204); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 24, 216); // cd (w, cj)
+// Elapsed time: 227 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "execute.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 7); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 338, 181); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("IO_of_switch.v", 133, 176); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 133, 176, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 87, 200); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("IO_of_switch.v", 228, 183); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 228, 183, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 97, 212); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 45 seconds
+selectCodeEditor("IO_of_switch.v", 252, 243); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 155, 213); // cd (w, cj)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 7); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MINISYS_XDC.xdc", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 7); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_memory.v", 6); // k (j, cj)
+// [GUI Memory]: 249 MB (+1120kb) [01:02:42]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MINISYS_XDC.xdc", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 7); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 96, 195); // cd (w, cj)
+// Elapsed time: 29 seconds
+selectCodeEditor("IO_of_switch.v", 316, 127); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 311, 130); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_memory.v", 6); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 7); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 141, 175); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 145, 128); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 141, 139); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 47, 205); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 29, 216); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 10, 235); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 79, 222); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 104, 236); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("IO_of_switch.v", 337, 83); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 95, 123); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("IO_of_switch.v", 88, 121); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 165, 95); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("IO_of_switch.v", 157, 159); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 153, 179); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 120 MB. Current time: 5/22/23 9:58:01 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 172 seconds
+selectCodeEditor("IO_of_switch.v", 149, 201); // cd (w, cj)
+// Elapsed time: 313 seconds
+selectCodeEditor("IO_of_switch.v", 65, 192); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("IO_of_switch.v", 247, 120); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 270, 116); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 282, 123); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 222, 86); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 69 seconds
+selectCodeEditor("IO_of_switch.v", 73, 165); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("IO_of_switch.v", 4, 196); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 2, 197); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 39, 198); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 77, 217); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 85, 204); // cd (w, cj)
+// Elapsed time: 390 seconds
+selectCodeEditor("IO_of_switch.v", 105, 137); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 62, 180); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 5); // k (j, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("IO_of_switch.v", 21, 171); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 22, 161); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpuclk (cpuclk.xci)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpuclk (cpuclk.xci)]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpuclk (cpuclk.xci)]", 7, false); // B (D, cj)
+// N (cj):  Re-customize IP : addNotify
+// r (cj): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N (cj)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cY (C, r)
+dismissDialog("Re-customize IP"); // r (cj)
+selectCodeEditor("IO_of_switch.v", 30, 183); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 30, 183); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 32, 180); // cd (w, cj)
+// Elapsed time: 246 seconds
+selectCodeEditor("IO_of_switch.v", 101, 179); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 62, 177); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 62, 177, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 66, 202); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 107, 200); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 86, 212); // cd (w, cj)
+// Elapsed time: 31 seconds
+selectCodeEditor("IO_of_switch.v", 30, 177); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 48, 200); // cd (w, cj)
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "program_rom.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+// Device view-level: 0.0
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // Y
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, data_memory (data_memory.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 10, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 10, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 10, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder (decoder.v)]", 10, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+// Elapsed time: 150 seconds
+selectCodeEditor("IO_of_switch.v", 52, 194); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 73, 197); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 128 MB. Current time: 5/22/23 10:28:04 PM CST
+// Elapsed time: 235 seconds
+selectCodeEditor("IO_of_switch.v", 87, 249); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("IO_of_switch.v", 109, 104); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 109, 104, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 85, 256); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("IO_of_switch.v", 52, 140); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 52, 140, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 67, 211); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 39 seconds
+selectCodeEditor("IO_of_switch.v", 108, 217); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 98, 228); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 89, 236); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectCodeEditor("IO_of_switch.v", 106, 202); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 130, 164); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 114, 201); // cd (w, cj)
+// Elapsed time: 66 seconds
+selectCodeEditor("IO_of_switch.v", 65, 39); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 69, 41); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 76, 40); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 70, 38); // cd (w, cj)
+// Elapsed time: 184 seconds
+selectCodeEditor("IO_of_switch.v", 37, 63); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 23, 110); // cd (w, cj)
+// Elapsed time: 116 seconds
+selectCodeEditor("IO_of_switch.v", 190, 218); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 171, 115); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 169, 115, false, true, false, false, false); // cd (w, cj) - Control Key
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 73, 111); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 73, 111, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 111, 130); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 111, 130, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 136, 217); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 136, 237); // cd (w, cj)
+// Elapsed time: 47 seconds
+selectCodeEditor("IO_of_switch.v", 83, 48); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 48, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 115, 126); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 115, 126, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 131, 218); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 129, 242); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("IO_of_switch.v", 69, 49); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 44, 217); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 41, 222); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 179, 242); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 252, 213); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 130, 146); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+typeControlKey(null, null, 'z');
+selectCodeEditor("IO_of_switch.v", 76, 230); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 68, 157); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 3); // k (j, cj)
+selectCodeEditor("decoder.v", 97, 200); // cd (w, cj)
+selectCodeEditor("decoder.v", 101, 215); // cd (w, cj)
+selectCodeEditor("decoder.v", 85, 147); // cd (w, cj)
+selectCodeEditor("decoder.v", 85, 147, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("decoder.v", 18, 179); // cd (w, cj)
+selectCodeEditor("decoder.v", 73, 177); // cd (w, cj)
+selectCodeEditor("decoder.v", 141, 176); // cd (w, cj)
+selectCodeEditor("decoder.v", 142, 197); // cd (w, cj)
+selectCodeEditor("decoder.v", 137, 183); // cd (w, cj)
+selectCodeEditor("decoder.v", 137, 183, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("decoder.v", 76, 181); // cd (w, cj)
+selectCodeEditor("decoder.v", 76, 181, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("decoder.v", 137, 179); // cd (w, cj)
+selectCodeEditor("decoder.v", 137, 179, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("decoder.v", 82, 180); // cd (w, cj)
+selectCodeEditor("decoder.v", 82, 180, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("decoder.v", 156, 175); // cd (w, cj)
+selectCodeEditor("decoder.v", 156, 175, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 108, 183); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 126, 138); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 126, 138, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 121, 141); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 139, 143); // cd (w, cj)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 183, 142); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 103, 182); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("IO_of_switch.v", 116, 143); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 84, 137); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 84, 137, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 139, 169); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 138, 178); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 47, 200); // cd (w, cj)
+// Elapsed time: 130 seconds
+selectCodeEditor("IO_of_switch.v", 127, 124); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 126, 123, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 148, 200); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 116, 197); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 116, 197, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 182, 244); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 166, 203); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 148, 201); // cd (w, cj)
+// Elapsed time: 365 seconds
+selectCodeEditor("IO_of_switch.v", 42, 46); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 37, 47); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 37, 48, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 48, 48); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 48, 48, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 71, 7); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 62 seconds
+selectCodeEditor("IO_of_switch.v", 272, 89); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 152, 60); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 117, 38); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 362, 45); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 362, 45, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("IO_of_switch.v", 79, 146); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 80, 144, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 59, 181); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 59, 181, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 16, 157); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 25, 178); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 143, 138); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("IO_of_switch.v", 132, 240); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 125, 234); // cd (w, cj)
+// Elapsed time: 183 seconds
+selectCodeEditor("IO_of_switch.v", 199, 139); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("IO_of_switch.v", 107, 142); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 101, 142); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 71, 162); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 85, 163); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 169, 168); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 78, 245); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 51, 213); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 110, 164); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 152, 165); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 116, 165); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 252, 168); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 126, 197); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 95, 156); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 54, 181); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 57, 196); // cd (w, cj)
+// Elapsed time: 22 seconds
+selectCodeEditor("IO_of_switch.v", 83, 201); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 126 MB. Current time: 5/22/23 10:58:04 PM CST
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_of_switch.v", 4); // k (j, cj)
+selectCodeEditor("IO_of_switch.v", 53, 211); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("IO_of_switch.v", 46, 120); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("IO_of_switch.v", 105, 189); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 99, 197); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("IO_of_switch.v", 47, 125); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 71, 124); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 71, 124, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 64, 214); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 112, 90); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 112, 90, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 132, 195); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("IO_of_switch.v", 176, 197); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("IO_of_switch.v", 76, 122); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 76, 122, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 82, 163); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 82, 163, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 154, 199); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("IO_of_switch.v", 170, 243); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("IO_of_switch.v", 111, 198); // cd (w, cj)
+// Elapsed time: 57 seconds
+selectCodeEditor("IO_of_switch.v", 126, 196); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 174, 219); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("IO_of_switch.v", 380, 67); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 338, 66); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 226, 84); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 344, 67); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 320, 66); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 282, 85); // cd (w, cj)
+// Elapsed time: 34 seconds
+selectCodeEditor("IO_of_switch.v", 83, 258); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 257, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 83, 257); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 257); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 257); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 88, 259); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 92, 258); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 92, 258, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 197, 211); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 79, 233); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("IO_of_switch.v", 60, 232); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 60, 234); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 165, 219); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 62, 242); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("IO_of_switch.v", 115, 160); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("IO_of_switch.v", 139, 197); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("IO_of_switch.v", 73, 191); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("IO_of_switch.v", 85, 197); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 183, 197); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 72, 256); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 96, 183); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 96, 183, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 171, 200); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("IO_of_switch.v", 192, 198); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("IO_of_switch.v", 194, 198); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 74, 219); // cd (w, cj)
+// Elapsed time: 20 seconds
+selectCodeEditor("IO_of_switch.v", 12, 66); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 12, 66, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 66, 66); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 116); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 83, 116, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 113, 118); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 113, 118, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 64, 122); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 64, 122, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 107, 123); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 107, 123); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 109, 123, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 24, 29); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 0, 83); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 0, 83, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 14, 111); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 14, 111, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 14, 122); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 14, 122, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 79, 81); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 79, 81, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 75, 125); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 75, 125); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 75, 125, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("IO_of_switch.v", 55, 123); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("IO_of_switch.v", 158, 197); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 108, 65); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 108, 65, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 85, 217); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("IO_of_switch.v", 192, 219); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("IO_of_switch.v", 108, 199); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("IO_of_switch.v", 50, 235); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 76, 251); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 203, 238); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 65, 180); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("IO_of_switch.v", 93, 179); // cd (w, cj)
+// Elapsed time: 21 seconds
+selectCodeEditor("IO_of_switch.v", 44, 68); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 190, 180); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 47, 61); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'c'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 92, 254); // cd (w, cj)
+typeControlKey((HResource) null, "IO_of_switch.v", 'v'); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 132, 256); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 198, 190); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 155, 212); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 122, 229); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 102, 227); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 98, 219); // cd (w, cj)
+selectCodeEditor("IO_of_switch.v", 68, 234); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("IO_of_switch.v", 60, 219); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 126 MB. Current time: 5/23/23 12:18:42 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 12:48:42 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 1:18:43 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 1:48:43 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 2:18:43 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 2:48:43 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 3:18:44 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 3:48:44 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 4:18:45 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 4:48:45 AM CST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 5:18:45 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 5:48:46 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 6:18:46 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 6:48:47 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 7:18:47 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 125 MB. Current time: 5/23/23 7:48:49 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 8:18:49 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 8:48:49 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 9:18:50 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 124 MB. Current time: 5/23/23 9:48:50 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 125 MB. Current time: 5/23/23 10:18:50 AM CST
+// Elapsed time: 40289 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true, false, false, false, true, false); // u (O, cj) - Popup Trigger - Node
+// Elapsed time: 251 seconds
+selectCodeEditor("IO_of_switch.v", 400, 94); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeMainWindow("Minisys_CPU - [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr] - Vivado 2017.4"); // cj
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// am (cj): Save Project: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// x (cj): Out of Date Design: addNotify
+dismissDialog("Save Project"); // am (cj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// a (cj): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // x (cj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bs (cj):  Save Constraints : addNotify
+// Tcl Message: set_property target_constrs_file D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc [current_fileset -constrset] 
+dismissDialog("Save Constraints"); // a (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// x (cj): Close Project: addNotify
+dismissDialog("Save Constraints"); // bs (cj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Close Project : addNotify
+dismissDialog("Close Project"); // x (cj)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 112 MB. Current time: 5/23/23 10:25:10 AM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,601 MB. GUI used memory: 118 MB. Current time: 5/23/23 10:25:11 AM CST
+// 'b' command handler elapsed time: 10 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bs (cj)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,601 MB. GUI used memory: 79 MB. Current time: 5/23/23 10:55:11 AM CST

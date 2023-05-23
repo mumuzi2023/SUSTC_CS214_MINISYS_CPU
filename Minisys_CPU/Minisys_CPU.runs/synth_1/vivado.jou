@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 22 21:24:47 2023
+# Process ID: 175204
+# Current directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1
+# Command line: vivado.exe -log data_memory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_memory.tcl
+# Log file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/data_memory.vds
+# Journal file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_memory.tcl -notrace

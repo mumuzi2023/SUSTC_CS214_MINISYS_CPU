@@ -2,57 +2,58 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon May 22 14:34:34 2023
-# Process ID: 18904
-# Current directory: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19888 D:\computer_organization\SUSTC_CS214_MINISYS_CPU\Minisys_CPU\Minisys_CPU.xpr
-# Log file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.log
-# Journal file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU\vivado.jou
+# Start of session at: Mon May 22 20:51:55 2023
+# Process ID: 168152
+# Current directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent156536 D:\myCodes\vivado\computer_organization\SUSTC_CS214_MINISYS_CPU\Minisys_CPU\Minisys_CPU.xpr
+# Log file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.log
+# Journal file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr
-INFO: [Project 1-313] Project file moved from 'D:/computer_organization/Minisys_CPU' since last save.
+open_project D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/lib_addi_ip_core/SEU_CSE_507_user_uart_bmpg_1.3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 update_compile_order -fileset sources_1
+create_project TESTBENCH_FOR_UART D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/TESTBENCH_FOR_UART -part xc7a100tfgg484-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/TESTBENCH_FOR_UART'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+current_project Minisys_CPU
+file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1
+file mkdir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new
+close [ open D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc w ]
+add_files -fileset constrs_1 D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc
+launch_runs impl_1 -jobs 8
+[Mon May 22 21:24:45 2023] Launched synth_1...
+Run output will be captured here: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/runme.log
+[Mon May 22 21:24:45 2023] Launched impl_1...
+Run output will be captured here: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {false} CONFIG.Coe_File {no_coe_file_loaded} CONFIG.Port_A_Write_Rate {50} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips prgrom]
-generate_target all [get_files  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
-catch { config_ip_cache -export [get_ips -all prgrom] }
-export_ip_user_files -of_objects [get_files D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
-reset_run prgrom_synth_1
-launch_runs -jobs 4 prgrom_synth_1
-[Mon May 22 14:36:08 2023] Launched prgrom_synth_1...
-Run output will be captured here: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1/runme.log
-export_simulation -of_objects [get_files D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci] -directory D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files/sim_scripts -ip_user_files_dir D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files -ipstatic_source_dir D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/modelsim} {questa=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/questa} {riviera=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/riviera} {activehdl=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {0} CONFIG.Port_B_Enable_Rate {0}] [get_ips prgrom]
-generate_target all [get_files  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
-catch { config_ip_cache -export [get_ips -all prgrom] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP prgrom, cache-ID = 7b0df619ddbe40a1; cache size = 5.629 MB.
-catch { [ delete_ip_run [get_ips -all prgrom] ] }
-INFO: [Project 1-386] Moving file 'D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci' from fileset 'prgrom' to fileset 'sources_1'.
-export_ip_user_files -of_objects [get_files D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci]
-INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci'
-export_simulation -of_objects [get_files D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci] -directory D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files/sim_scripts -ip_user_files_dir D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files -ipstatic_source_dir D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/modelsim} {questa=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/questa} {riviera=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/riviera} {activehdl=D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon May 22 20:11:15 2023...
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1243.168 ; gain = 0.762
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1243.168 ; gain = 0.762
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 1335.227 ; gain = 411.289
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {address[31]} {address[30]} {address[29]} {address[28]} {address[27]} {address[26]} {address[25]} {address[24]} {address[23]} {address[22]} {address[21]} {address[20]} {address[19]} {address[18]} {address[17]} {address[16]} {address[15]} {address[14]} {address[13]} {address[12]} {address[11]} {address[10]} {address[9]} {address[8]} {address[7]} {address[6]} {address[5]} {address[4]} {address[3]} {address[2]} {address[1]} {address[0]} {readData[31]} {readData[30]} {readData[29]} {readData[28]} {readData[27]} {readData[26]} {readData[25]} {readData[24]} {readData[23]} {readData[22]} {readData[21]} {readData[20]} {readData[19]} {readData[18]} {readData[17]} {readData[16]} {readData[15]} {readData[14]} {readData[13]} {readData[12]} {readData[11]} {readData[10]} {readData[9]} {readData[8]} {readData[7]} {readData[6]} {readData[5]} {readData[4]} {readData[3]} {readData[2]} {readData[1]} {readData[0]} {writeData[31]} {writeData[30]} {writeData[29]} {writeData[28]} {writeData[27]} {writeData[26]} {writeData[25]} {writeData[24]} {writeData[23]} {writeData[22]} {writeData[21]} {writeData[20]} {writeData[19]} {writeData[18]} {writeData[17]} {writeData[16]} {writeData[15]} {writeData[14]} {writeData[13]} {writeData[12]} {writeData[11]} {writeData[10]} {writeData[9]} {writeData[8]} {writeData[7]} {writeData[6]} {writeData[5]} {writeData[4]} {writeData[3]} {writeData[2]} {writeData[1]} {writeData[0]} clock memWrite]]
+close [ open D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/IO_of_switch.v w ]
+add_files D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/IO_of_switch.v
+update_compile_order -fileset sources_1
+set_property target_constrs_file D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc [current_fileset -constrset]
+save_constraints -force
+close_project
