@@ -20,10 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ifetch(Instruction, branch_base_addr, link_addr, clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
-output[31:0] Instruction; // the instruction fetched from this module to Decoder and Controller
+module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
+output[31:0] Instruction_o; // the instruction fetched from this module to Decoder and Controller
 output[31:0] branch_base_addr; // (pc+4) to ALU which is used by branch type instruction
 output[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
+output[31:0] cur_pc;
+input[31:0] Instruction_i;
 //from CPU TOP
 input clock, reset; // Clock and reset
 // from ALU
@@ -40,23 +42,14 @@ input Jr; // while Jr is 1, it means current instruction is jr
 
 /*
 it is just a scheme, the detail should be changed according to the actual implementation
-
 */
-
-prgrom instmem(
-        .clka(clock),         // input wire clka
-        .addra(PC[15:2]),     // input wire [13 : 0] addra
-        .douta(Instruction)         // output wire [31 : 0] douta
-);
-
-
 
 reg[31:0] PC,Next_PC;
 always @* begin
 if(((Branch == 1) && (Zero == 1 )) || ((nBranch == 1) && (Zero == 0))) // beq, bne condition satisfied
     Next_PC = Addr_result << 2;// the calculated new value for PC ,check out if the indexes omitted two bits.
 else if(Jr == 1)
-    Next_PC = Read_data_1 << 2; // the value of $31 register
+    Next_PC = Read_data_1; // the value of $31 register
 else 
     Next_PC = PC + 32'h0000_0004; // PC+4
 end
@@ -69,7 +62,7 @@ if(reset == 1)
 else begin
 
     if((Jmp == 1) || (Jal == 1)) begin
-        PC <= {PC[31:28],Instruction[27:0]<<2};
+        PC <= {PC[31:28],Instruction_i[27:0]<<2};
     end
     else begin
         PC <= Next_PC;
@@ -78,7 +71,9 @@ else begin
 end
 end
 
-assign link_addr = PC + 4;
-assign branch_base_addr = PC + 4;
+assign link_addr = PC + 32'h00000004;
+assign branch_base_addr = PC + 32'h00000004;
+assign Instruction_o = Instruction_i;
+assign cur_pc = PC;
 
 endmodule
