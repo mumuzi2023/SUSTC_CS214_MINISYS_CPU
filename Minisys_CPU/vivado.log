@@ -57,3 +57,5 @@ update_compile_order -fileset sources_1
 set_property target_constrs_file D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/MINISYS_XDC.xdc [current_fileset -constrset]
 save_constraints -force
 close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 23 14:12:49 2023...
