@@ -32,7 +32,9 @@ module program_rom(rom_clk_i,rom_adr_i,Instruction_o,upg_rst_i,upg_clk_i,upg_wen
     input[13:0] upg_adr_i; // UPG write address
     input[31:0] upg_dat_i; // UPG write data
     input upg_done_i; // 1 if program finished
-wire kickOff = upg_rst_i | (~upg_rst_i & upg_done_i );
+    
+    wire kickOff = upg_rst_i | (~upg_rst_i & upg_done_i );
+
     prgrom instmem (
     .clka (kickOff ? rom_clk_i : upg_clk_i ),
     .wea (kickOff ? 1'b0 : upg_wen_i ),
@@ -40,4 +42,5 @@ wire kickOff = upg_rst_i | (~upg_rst_i & upg_done_i );
     .dina (kickOff ? 32'h00000000 : upg_dat_i ),
     .douta (Instruction_o)
     );
-    endmodule
+    
+endmodule

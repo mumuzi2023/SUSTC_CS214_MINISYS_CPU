@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder(instruction,clock,reset,RegWrite,RegDST,MemtoReg,jal,link_addr,alu_result,memory_data,read_data_1,read_data_2);
+module decoder(instruction,clock,reset,RegWrite,RegDST,MemtoReg,jal,link_addr,alu_result,memory_data,read_data_1,read_data_2,immediate_ext);
 
 input[31:0] instruction;
 input clock;
@@ -34,6 +34,7 @@ input[31:0] alu_result;//write data
 input[31:0] memory_data;//ReadData from memory
 output[31:0] read_data_1;
 output[31:0] read_data_2;
+output[31:0] immediate_ext;
 
 wire[5:0] op= instruction[31:26];
 wire[4:0] rs= instruction[25:21];
