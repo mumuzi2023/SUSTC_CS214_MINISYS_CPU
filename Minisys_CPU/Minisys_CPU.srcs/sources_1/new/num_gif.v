@@ -27,17 +27,17 @@ output reg [7:0] result
 always@*
 begin
     case(sw)
-    4'h0:result=8'b11111100;
-    4'h1:result=8'b01100000;
-    4'h2:result=8'b11011010;
-    4'h3:result=8'b11110010;
-    4'h4:result=8'b01100110;
-    4'h5:result=8'b10110110;
-    4'h6:result=8'b10111110;
-    4'h7:result=8'b11100000;
-    4'h8:result=8'b11111110;
-    4'h9:result=8'b11100110;
-    default result=8'b00000000;
+    4'h0:result=8'b11000000;
+    4'h1:result=8'b11111001;
+    4'h2:result=8'b10100100;
+    4'h3:result=8'b10110000;
+    4'h4:result=8'b10011001;
+    4'h5:result=8'b10010010;
+    4'h6:result=8'b10000010;
+    4'h7:result=8'b11111000;
+    4'h8:result=8'b10000000;
+    4'h9:result=8'b10011000;
+    default result=8'b11111111;
 endcase
 end
 endmodule

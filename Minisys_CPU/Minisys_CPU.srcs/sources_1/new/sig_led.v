@@ -40,38 +40,37 @@ assign high=h;
 assign value=v;
 always@(posedge clk)begin
     if(h==8'b11111110)begin
-        v<=n7;
+        v<=v2;
         h<=8'b11111101;
     end
     else if(h==8'b11111101)begin
-        v<=n6;
+        v<=v3;
         h<=8'b11111011;
     end
     else if(h==8'b11111011)begin
-        v<=n5;
+        v<=v4;
         h<=8'b11110111;
     end
     else if(h==8'b11110111)begin
-        v<=n4;
+        v<=v5;
         h<=8'b11101111;
     end
     else if(h==8'b11101111)begin
-        v<=n3;
+        v<=v6;
         h<=8'b11011111;
     end
     else if(h==8'b11011111)begin
-        v<=n2;
+        v<=v7;
         h<=8'b10111111;
     end
     else if(h==8'b10111111)begin
-        v<=n1;
+        v<=v8;
         h<=8'b01111111;
     end
     else begin
-        v<=n8;
+        v<=v1;
         h<=8'b11111110;
     end
-
 end
 
 endmodule
