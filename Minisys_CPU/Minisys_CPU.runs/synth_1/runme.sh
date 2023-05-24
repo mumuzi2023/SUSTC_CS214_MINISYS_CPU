@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log data_memory.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_memory.tcl
+EAStep vivado -log TEST_FOR_SIG_LED.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_FOR_SIG_LED.tcl

@@ -39,37 +39,37 @@ num_gif num_gif8(n8,v8);
 assign high=h;
 assign value=v;
 always@(posedge clk)begin
-    if(h==8'b00000001)begin
+    if(h==8'b11111110)begin
         v<=n7;
-        h<=8'b00000010;
+        h<=8'b11111101;
     end
-    else if(h==8'b00000010)begin
+    else if(h==8'b11111101)begin
         v<=n6;
-        h<=8'b00000100;
+        h<=8'b11111011;
     end
-    else if(h==8'b00000100)begin
+    else if(h==8'b11111011)begin
         v<=n5;
-        h<=8'b00001000;
+        h<=8'b11110111;
     end
-    else if(h==8'b00001000)begin
+    else if(h==8'b11110111)begin
         v<=n4;
-        h<=8'b00010000;
+        h<=8'b11101111;
     end
-    else if(h==8'b00010000)begin
+    else if(h==8'b11101111)begin
         v<=n3;
-        h<=8'b00100000;
+        h<=8'b11011111;
     end
-    else if(h==8'b001000000)begin
+    else if(h==8'b11011111)begin
         v<=n2;
-        h<=8'b01000000;
+        h<=8'b10111111;
     end
-    else if(h==8'b01000000)begin
+    else if(h==8'b10111111)begin
         v<=n1;
-        h<=8'b10000000;
+        h<=8'b01111111;
     end
     else begin
         v<=n8;
-        h<=8'b00000001;
+        h<=8'b11111110;
     end
 
 end

@@ -1,78 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1684761884">
-  <File Type="PWROPT-DCP" Name="data_memory_pwropt.dcp"/>
-  <File Type="ROUTE-PWR" Name="data_memory_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="data_memory.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="data_memory_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="data_memory_reports.tcl"/>
-  <File Type="BG-DRC" Name="data_memory.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="data_memory_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="data_memory_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="data_memory.hwdef"/>
-  <File Type="OPT-DCP" Name="data_memory_opt.dcp"/>
-  <File Type="OPT-DRC" Name="data_memory_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="data_memory_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="data_memory_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="data_memory_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="data_memory_placed.dcp"/>
-  <File Type="PLACE-IO" Name="data_memory_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="data_memory_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="data_memory_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="data_memory_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="data_memory_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="data_memory_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="data_memory_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="data_memory_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="data_memory_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="data_memory_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="data_memory_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="data_memory_drc_physopted.rpt"/>
-  <File Type="BG-BIT" Name="data_memory.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="data_memory_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="data_memory_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="data_memory_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="data_memory_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="data_memory_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="data_memory_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="data_memory.msk"/>
-  <File Type="ROUTE-DRC-RPX" Name="data_memory_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="data_memory.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="data_memory_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="data_memory.rbt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="data_memory_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="data_memory.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="data_memory_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="data_memory_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="data_memory_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="data_memory_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="data_memory_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="data_memory_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="data_memory_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="data_memory_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="data_memory.vdi"/>
-  <File Type="ROUTE-CLK" Name="data_memory_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="data_memory_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="data_memory_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="data_memory_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="data_memory_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="data_memory_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="data_memory.nky"/>
-  <File Type="BITSTR-BMM" Name="data_memory_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="data_memory.mmi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1684900990">
+  <File Type="PWROPT-DCP" Name="TEST_FOR_SIG_LED_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="TEST_FOR_SIG_LED_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TEST_FOR_SIG_LED.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="TEST_FOR_SIG_LED_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TEST_FOR_SIG_LED_reports.tcl"/>
+  <File Type="BG-DRC" Name="TEST_FOR_SIG_LED.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TEST_FOR_SIG_LED_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="TEST_FOR_SIG_LED.hwdef"/>
+  <File Type="OPT-DCP" Name="TEST_FOR_SIG_LED_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TEST_FOR_SIG_LED_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="TEST_FOR_SIG_LED_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TEST_FOR_SIG_LED_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TEST_FOR_SIG_LED_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TEST_FOR_SIG_LED_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TEST_FOR_SIG_LED_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TEST_FOR_SIG_LED_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TEST_FOR_SIG_LED_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TEST_FOR_SIG_LED_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TEST_FOR_SIG_LED_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TEST_FOR_SIG_LED_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TEST_FOR_SIG_LED_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TEST_FOR_SIG_LED_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="TEST_FOR_SIG_LED.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TEST_FOR_SIG_LED_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TEST_FOR_SIG_LED_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TEST_FOR_SIG_LED_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TEST_FOR_SIG_LED_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TEST_FOR_SIG_LED_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="TEST_FOR_SIG_LED.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="TEST_FOR_SIG_LED_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="TEST_FOR_SIG_LED.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TEST_FOR_SIG_LED_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="TEST_FOR_SIG_LED.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TEST_FOR_SIG_LED_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="TEST_FOR_SIG_LED.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TEST_FOR_SIG_LED_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TEST_FOR_SIG_LED_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TEST_FOR_SIG_LED_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TEST_FOR_SIG_LED_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TEST_FOR_SIG_LED_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TEST_FOR_SIG_LED_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TEST_FOR_SIG_LED_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TEST_FOR_SIG_LED_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TEST_FOR_SIG_LED.vdi"/>
+  <File Type="ROUTE-CLK" Name="TEST_FOR_SIG_LED_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TEST_FOR_SIG_LED_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TEST_FOR_SIG_LED_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TEST_FOR_SIG_LED_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TEST_FOR_SIG_LED_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TEST_FOR_SIG_LED_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="TEST_FOR_SIG_LED.nky"/>
+  <File Type="BITSTR-BMM" Name="TEST_FOR_SIG_LED_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TEST_FOR_SIG_LED.mmi"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="data_memory.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="data_memory.sysdef"/>
+  <File Type="BITSTR-LTX" Name="TEST_FOR_SIG_LED.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="TEST_FOR_SIG_LED.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/data_memory.v">
+    <File Path="$PSRCDIR/sources_1/new/clk_1k.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/num_gif.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sig_led.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TEST_FOR_SIG_LED.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/prgrom/prgrom.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM/RAM.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/controller.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_memory.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -88,26 +133,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/RAM/dmem32.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ifetch.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/prgrom/prgmip32.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/execute.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -116,7 +141,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/prgrom/prgrom.xci">
+    <File Path="$PSRCDIR/sources_1/new/ifetch.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -132,21 +157,57 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/cpu_top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM/dmem32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/prgrom/prgmip32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IO_of_switch.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/keypad.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="data_memory"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="TEST_FOR_SIG_LED"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/MINISYS_XDC.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/TEST_FOR_LED.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/TEST_FOR_LED.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -162,5 +223,5 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="RAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
 </GenRun>
