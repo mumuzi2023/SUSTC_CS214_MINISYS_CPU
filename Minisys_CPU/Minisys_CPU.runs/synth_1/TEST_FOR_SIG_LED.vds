@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log TEST_FOR_SIG_LED.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_FOR_SIG_LED.tcl
-
-
-****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 24 12:03:12 2023
+# Process ID: 243484
+# Current directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1
+# Command line: vivado.exe -log TEST_FOR_SIG_LED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_FOR_SIG_LED.tcl
+# Log file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/TEST_FOR_SIG_LED.vds
+# Journal file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source TEST_FOR_SIG_LED.tcl -notrace
 Command: synth_design -top TEST_FOR_SIG_LED -part xc7a100tfgg484-1
 Starting synth_design
