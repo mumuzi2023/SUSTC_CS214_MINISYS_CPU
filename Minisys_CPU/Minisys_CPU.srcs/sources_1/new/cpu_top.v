@@ -53,6 +53,7 @@ controller controller(
 .Op(opcode),
 .Func(func), 
 .Jr(jr),
+.Jmp(jmp),
 .Jal(jal),
 .Branch(branch),
 .nBranch(nbranch),

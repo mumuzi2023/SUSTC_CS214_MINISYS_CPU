@@ -36,20 +36,26 @@ output[31:0] read_data_1;
 output[31:0] read_data_2;
 output[31:0] immediate_ext;
 
-wire[5:0] op= instruction[31:26];
-wire[4:0] rs= instruction[25:21];
+wire[5:0] op = instruction[31:26];
+wire[4:0] rs = instruction[25:21];
 wire[4:0] rt = instruction[20:16];
-wire[4:0] rd= instruction[15:11];
+wire[4:0] rd = instruction[15:11];
+
 //check what opcode should be imme_Extend?
 //here for andi and ori operation,the extended bit is zero, but for other operations, immediate is sign extension
 wire[15:0] immediate= instruction[15:0];
 wire[31:0] immediate_ext = (op == 6'b001100||op ==  6'b001101)?{{16{1'b0}},immediate}:{{16{instruction[15]}},immediate};
-wire[4:0] write_idx = jal?5'b11111:(RegDST)?rd:rt;//the index of register should write
 
-reg [31:0] register[0:31];//register file
+//the index of register should write
+wire[4:0] write_idx = jal?5'b11111:(RegDST)?rd:rt;
+
+//register file
+reg [31:0] register[0:31];
 
 integer i;
+//read_data_1 is value of source register
 assign read_data_1 = register[rs];
+//read_data_2 is value of rt register(source register 2).
 assign read_data_2 = register[rt];
 
 
@@ -64,6 +70,8 @@ always @(posedge clock)begin
     else begin
     // data from alu_result or data from memory?
          if((RegWrite || jal) && write_idx != 0) begin
+               //if jal, record the link_addr(i.e. PC + 4) to $ra.
+               //else check if it is lw(MemtoReg), if yes memory_data, no write alu_result into it.
                register[write_idx] <= (jal? link_addr:(MemtoReg? memory_data :alu_result));
          end
     end
