@@ -78,6 +78,7 @@ set rc [catch {
   add_files -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/TEST_FOR_SIG_LED.dcp
   read_ip -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/cpuclk/cpuclk.xci
   read_xdc D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc
+  read_xdc D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/imports/keypad_test/cons.xdc
   link_design -top TEST_FOR_SIG_LED -part xc7a100tfgg484-1
   close_msg_db -file init_design.pb
 } RESULT]
