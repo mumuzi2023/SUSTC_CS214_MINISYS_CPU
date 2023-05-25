@@ -26,7 +26,8 @@
 //  3   2   1   0
 //    line[3:0]
 module keypad(line,row,clk,o1,o2,o3,o4,o5,o6,o7,o8);
-input [3:0] line,row;
+output[3:0] line;
+input [3:0] row;
 input clk;
 output[3:0] o1,o2,o3,o4,o5,o6,o7,o8;
 reg [7:0]counter_s;//counter for add number
