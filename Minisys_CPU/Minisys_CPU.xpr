@@ -77,6 +77,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/pad_decode.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/sig_led.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,22 +107,6 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/data_memory.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../CS202-Final-HW-Pipellined-CPU-master/module_files/io_modules/keypad_unit.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../CS202-Final-HW-Pipellined-CPU-master/verification_files/keypad_test/keypad_top.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -207,14 +198,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../CS202-Final-HW-Pipellined-CPU-master/verification_files/keypad_test/keypad_testbench.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="TEST_FOR_SIG_LED"/>
@@ -224,14 +207,6 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/TEST_FOR_LED.xdc">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/constrs_1/imports/keypad_test/cons.xdc">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../CS202-Final-HW-Pipellined-CPU-master/verification_files/keypad_test/cons.xdc"/>
-          <Attr Name="ImportTime" Val="1669451568"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

@@ -20,19 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module keypad_n(line,row,clk,o1,o2,o3,o4,o5,o6,o7,o8);
+module keypad_n(line,row,clk,o1);
 output reg[3:0]line=4'b1110;
 input[3:0]row;
 input clk;
-output[3:0]o1,o2,o3,o4,o5,o6,o7,o8;
-reg[3:0]v1,v2,v3,v4,v5,v6,v7,v8;
-assign o1=v1,o2=v2;
-assign o3=v3;
-assign o4=v4;
-assign o5=v5;
-assign o6=v6;
-assign o7=v7;
-assign o8=v8;
+output[3:0]o1;
+reg[3:0]v1;
+assign o1=v1;
 reg[9:0] clk_10=0;
 reg[9:0] v=0;
 reg[1:0] now=1;
