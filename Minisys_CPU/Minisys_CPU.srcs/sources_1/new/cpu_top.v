@@ -42,13 +42,17 @@ wire jal;
 wire branch;
 wire nbranch;
 wire regdst;
-wire memtoreg;
+wire memoriotoreg;
 wire regwrite;
 wire alusrc;
+wire memread;
 wire memwrite;
+wire ioread;
+wire iowrite;
 wire sftmd;
 wire[1:0] aluop;
 wire I_format;
+///////////////////////////////////////////////////////////////////////
 controller controller(
 .Op(opcode),
 .Func(func), 
@@ -58,9 +62,12 @@ controller controller(
 .Branch(branch),
 .nBranch(nbranch),
 .RegDST(regdst),
-.MemtoReg(memtoreg),
+.MemorIOtoReg(memoriotoreg),
 .RegWrite(regwrite), 
-.MemWrite(memwrite), 
+.MemRead(memread),
+.MemWrite(memwrite),
+.IORead(ioread),
+.IOWrite(iowrite), 
 .ALUSrc(alusrc),
 .Sftmd(sftmd), 
 .ALUop(aluop),
@@ -97,27 +104,29 @@ ifetch ifetch(
 wire sign_ext;
 wire alu_result;
 wire memory_data;
+wire readdata;
 decoder decoder(
 .instruction(ins_o),
 .clock(cpu_clk),
 .reset(reset),
 .RegWrite(regwrite),
 .RegDST(regdst),// 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
-.MemtoReg(memtoreg),
+.MemorIOtoReg(memoriotoreg),
 .jal(jal),//jal need to write address to $ra
 .link_addr(link_addr), // from ifetch
 .alu_result(alu_result),//write data
-.memory_data(memory_data),//ReadData from memory
+.memorio_data(readdata),//ReadData from memory
 .read_data_1(read_data_1),
 .read_data_2(read_data_2),
 .immediate_ext(sign_ext)
 );
 
+wire writedata;
 data_memory data_memory(
 .clock(cpu_clk),
 .memWrite(memwrite),
 .address(alu_result),
-.writeData(read_data_2),/////////////////////////////////////////////
+.writeData(writedata),/////////////////////////////////////////////
 .readData(memory_data)
 );
 
@@ -142,6 +151,35 @@ execute execute(
 .Addr_Result(addr_result)
 );
 
+wire ledctrl;
+wire switchctrl;
+wire ioread_data;
+memorio memorio(
+.address(alu_result),
+.memread(memread),
+.memwrite(memwrite),
+.ioread(ioread),
+.iowrite(iowrite),
+.memory_data(memory_data),
+.ioread_data(ioread_data),
+.oridata(read_data_2),
+.readdata(readdata),
+.writedata(writedata),
+.ledctrl(ledctrl),
+.switchctrl(switchctrl)
+);
+
+wire switch_data;
+ioreader ioreader(
+.reset(reset),// reset
+.ioread(ioread),//from ctrl
+.switchctrl(switchctrl),//if it is switch input
+.ioread_data_switch(switch_data),  //data from switch
+.ioread_data(ioread_data)//finally choose ioread_data
+);
+
+
+//writedata[15:0] for led
 
 program_rom program_rom(
 .rom_clk_i(), // ROM clock

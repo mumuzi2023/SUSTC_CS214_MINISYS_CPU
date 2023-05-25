@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module execute(Read_data_1,Read_data_2,Sign_extend,Opcode, Function_opcode,Shamt,PC_plus_4,ALUOp,ALUSrc,I_format,Sftmd,ALU_Result,Zero,Addr_Result);
-    // from Decoder
+// from Decoder
 input[31:0] Read_data_1; //the source of Ainput
 input[31:0] Read_data_2; //one of the sources of Binput
 input[31:0] Sign_extend; //one of the sources of Binput
@@ -86,11 +86,13 @@ always @* begin  // 6ÖÖÒÆÎ»Ö¸Áî
         else  
             ALU_Result = ALU_output_mux[31:0];   //otherwise
     end
- 
+    
+    //branch address = PC + 4 + CONST * 4; here the result is: real result >> 2;
     assign Branch_Addr = PC_plus_4[31:2] + Sign_extend[31:0];
     assign Addr_Result = Branch_Addr[31:0];
     assign Zero = (ALU_output_mux[31:0] == 32'h00000000) ? 1'b1 : 1'b0;
     
+    //calculate according to the ALU_ctl
     always @(ALU_ctl or Ainput or Binput) begin
         case(ALU_ctl)
             3'b000:ALU_output_mux = Ainput & Binput;

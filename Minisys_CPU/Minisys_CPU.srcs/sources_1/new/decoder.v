@@ -20,18 +20,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder(instruction,clock,reset,RegWrite,RegDST,MemtoReg,jal,link_addr,alu_result,memory_data,read_data_1,read_data_2,immediate_ext);
+module decoder(instruction,clock,reset,RegWrite,RegDST,MemorIOtoReg,jal,link_addr,alu_result,memorio_data,read_data_1,read_data_2,immediate_ext);
 
 input[31:0] instruction;
 input clock;
 input reset;
 input RegWrite;
 input RegDST;// 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
-input MemtoReg;
+input MemorIOtoReg;
 input jal;//jal need to write address to $ra
 input link_addr; // from ifetch
 input[31:0] alu_result;//write data
-input[31:0] memory_data;//ReadData from memory
+input[31:0] memorio_data;//ReadData from memory or io
 output[31:0] read_data_1;
 output[31:0] read_data_2;
 output[31:0] immediate_ext;
@@ -72,7 +72,7 @@ always @(posedge clock)begin
          if((RegWrite || jal) && write_idx != 0) begin
                //if jal, record the link_addr(i.e. PC + 4) to $ra.
                //else check if it is lw(MemtoReg), if yes memory_data, no write alu_result into it.
-               register[write_idx] <= (jal? link_addr:(MemtoReg? memory_data :alu_result));
+               register[write_idx] <= (jal? link_addr:(MemorIOtoReg? memorio_data :alu_result));
          end
     end
 end

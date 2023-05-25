@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Minisys_CPU.srcs/sources_1/ip/cpuclk" \
+"../../../../Minisys_CPU.srcs/sources_1/new/execute.v" \
+"../../../../Minisys_CPU.srcs/sim_1/new/execute_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
