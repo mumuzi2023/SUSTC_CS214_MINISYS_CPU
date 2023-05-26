@@ -14,19 +14,20 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23632 
+INFO: Helper process launched with PID 16620 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 340.633 ; gain = 98.570
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 339.949 ; gain = 99.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TEST_FOR_SIG_LED' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/TEST_FOR_SIG_LED.v:23]
-INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/realtime/cpuclk_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'clk_1k' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
 INFO: [Synth 8-256] done synthesizing module 'clk_1k' (2#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
 INFO: [Synth 8-638] synthesizing module 'keypad_n' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
 INFO: [Synth 8-256] done synthesizing module 'keypad_n' (3#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
 INFO: [Synth 8-638] synthesizing module 'pad_decode' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
 INFO: [Synth 8-256] done synthesizing module 'pad_decode' (4#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
+WARNING: [Synth 8-350] instance 'pad_decode1' of module 'pad_decode' requires 11 connections, but only 7 given [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/TEST_FOR_SIG_LED.v:35]
 INFO: [Synth 8-638] synthesizing module 'sig_led' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
 INFO: [Synth 8-638] synthesizing module 'num_gif' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
 INFO: [Synth 8-256] done synthesizing module 'num_gif' (5#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
@@ -60,7 +61,7 @@ WARNING: [Synth 8-3917] design TEST_FOR_SIG_LED has port led[2] driven by consta
 WARNING: [Synth 8-3917] design TEST_FOR_SIG_LED has port led[1] driven by constant 1
 WARNING: [Synth 8-3917] design TEST_FOR_SIG_LED has port led[0] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 392.496 ; gain = 150.434
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 391.902 ; gain = 151.109
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -82,15 +83,15 @@ WARNING: [Synth 8-3295] tying undriven pin sig_led:n4[2] to constant 0 [D:/myCod
 WARNING: [Synth 8-3295] tying undriven pin sig_led:n4[1] to constant 0 [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/TEST_FOR_SIG_LED.v:36]
 WARNING: [Synth 8-3295] tying undriven pin sig_led:n4[0] to constant 0 [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/TEST_FOR_SIG_LED.v:36]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 392.496 ; gain = 150.434
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 391.902 ; gain = 151.109
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/dcp1/cpuclk_in_context.xdc] for cell 'cpuclk1'
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/dcp1/cpuclk_in_context.xdc] for cell 'cpuclk1'
+Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/dcp1/cpuclk_in_context.xdc] for cell 'cpuclk1'
+Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/dcp1/cpuclk_in_context.xdc] for cell 'cpuclk1'
 Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
 Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_FOR_SIG_LED_propImpl.xdc].
@@ -100,25 +101,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 750.133 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 750.105 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/dcp1/cpuclk_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-14316-Gao/dcp1/cpuclk_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/dcp1/cpuclk_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22048-Gao/dcp1/cpuclk_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for cpuclk1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element clk_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
 INFO: [Synth 8-802] inferred FSM for state register 'line_reg' in module 'keypad_n'
@@ -138,7 +139,7 @@ WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/myCo
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'line_reg' using encoding 'sequential' in module 'keypad_n'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -155,7 +156,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 6     
+	                4 Bit    Registers := 10    
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
@@ -202,7 +203,7 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 1     
 +---Registers : 
 	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 5     
+	                4 Bit    Registers := 9     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 9     
@@ -229,6 +230,10 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o5_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o6_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o7_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o8_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:33]
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element clk_1k1/clk_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
 WARNING: [Synth 8-6014] Unused sequential element keypad1/clk_10_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:34]
@@ -262,7 +267,7 @@ WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[9]) is unused and
 WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[8]) is unused and will be removed from module TEST_FOR_SIG_LED.
 WARNING: [Synth 8-3332] Sequential element (sig_led/v_reg[7]) is unused and will be removed from module TEST_FOR_SIG_LED.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,13 +282,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk1/single_cycle_cpu_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk1/uart_clk' to pin 'cpuclk1/bbstub_uart_clk/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 750.133 ; gain = 508.070
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 750.105 ; gain = 509.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 760.500 ; gain = 518.438
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 762.344 ; gain = 521.551
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -295,7 +300,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -319,7 +324,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -332,7 +337,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -344,25 +349,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -404,11 +409,11 @@ Report Instance Areas:
 |5     |  sig_led     |sig_led    |    35|
 +------+--------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 767.648 ; gain = 167.949
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 767.648 ; gain = 525.586
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 768.434 ; gain = 169.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 768.434 ; gain = 527.641
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -418,10 +423,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+36 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 767.648 ; gain = 537.059
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 768.434 ; gain = 537.676
 INFO: [Common 17-1381] The checkpoint 'D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/TEST_FOR_SIG_LED.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TEST_FOR_SIG_LED_utilization_synth.rpt -pb TEST_FOR_SIG_LED_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 767.648 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu May 25 15:15:32 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 768.434 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 25 15:34:54 2023...
