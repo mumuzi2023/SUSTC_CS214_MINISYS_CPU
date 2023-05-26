@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module memorio(inmode,iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,switchctrl,padctrl);
-input inmode;//0 switch, 1 pad
+module memorio(iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,sigctrl,switchctrl,padctrl);
 input iodone;// io is done
 input address;
 input memread;
@@ -34,6 +33,7 @@ input[31:0] oridata;
 output[31:0] readdata;// finally choice of mem or io data
 output[31:0] writedata;
 output ledctrl;
+output sigctrl;
 output switchctrl;
 output padctrl;
 
@@ -43,7 +43,8 @@ assign readdata = (ioread==1'b1)?((address == 32'hFFFFFC80)?((iodone==1'b0)?32'h
 assign writedata = (iowrite==1'b1)?oridata:oridata;
 
 assign ledctrl = (iowrite == 1'b1)?1'b1:1'b0;
-assign switchctrl = (ioread == 1'b1 && inmode == 1'b0)?1'b1:1'b0;// simply ioread, complicately it is not only ioread
-assign padctrl = (ioread == 1'b1 && inmode == 1'b1)?1'b1:1'b0;
-
+assign switchctrl = (ioread == 1'b1 && address == 32'hFFFFFC60)?1'b1:1'b0;// simply ioread, complicately it is not only ioread
+assign padctrl = (ioread == 1'b1 && address == 32'hFFFFFC64)?1'b1:1'b0;
+assign ledctrl = (iowrite == 1'b1 && address == 32'hFFFFFC68)?1'b1:1'b0;
+assign sigctrl = (iowrite == 1'b1 && address == 32'hFFFFFC72)?1'b1:1'b0;
 endmodule

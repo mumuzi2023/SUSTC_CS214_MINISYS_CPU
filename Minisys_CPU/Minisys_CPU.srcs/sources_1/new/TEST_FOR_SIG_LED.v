@@ -21,9 +21,10 @@
 
 
 module TEST_FOR_SIG_LED(ori_clk,line_pad,row_pad,high_led,value_led,led);
+
 input ori_clk;
-output [3:0]line_pad;
 input [3:0]row_pad;
+output [3:0]line_pad;
 output [7:0]high_led,value_led;
 output [23:0]led;
 

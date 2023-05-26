@@ -20,13 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cpu_top(ori_clk,reset,inmode,outmode,iodone);
+module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,line_pad);
+
 input ori_clk;
 input reset;
-input inmode; // 0 switch, 1 pad
-input[1:0] outmode;// high light led, low led sig
 input iodone;
-
+input[15:0] switch_in;
+input[3:0] row_pad;
+output [7:0]high_led,value_led;
+output [15:0]led;
+output [3:0]line_pad;
 
 wire cpu_clk;
 wire uart_clk;
@@ -55,10 +58,12 @@ wire iowrite;
 wire sftmd;
 wire[1:0] aluop;
 wire I_format;
-///////////////////////////////////////////////////////////////////////
+wire[31:0] alu_result;
+
 controller controller(
 .Op(opcode),
 .Func(func), 
+.ALU_resultHigh(alu_result[31:10]),
 .Jr(jr),
 .Jmp(jmp),
 .Jal(jal),
@@ -84,8 +89,8 @@ wire[31:0] link_addr;
 wire[31:0] cur_pc;
 wire[31:0] addr_result;
 wire zero;
-wire read_data_1;
-wire read_data_2;
+wire[31:0] read_data_1;
+wire[31:0]  read_data_2;
 ifetch ifetch(
 .Instruction_o(ins_o),
 .branch_base_addr(branch_base_addr), 
@@ -104,10 +109,11 @@ ifetch ifetch(
 .Jr(jr)
 );
 
-wire sign_ext;
-wire alu_result;
-wire memory_data;
-wire readdata;
+
+wire[31:0] sign_ext;
+wire[31:0] memory_data;
+wire[31:0] readdata;
+
 decoder decoder(
 .instruction(ins_o),
 .clock(cpu_clk),
@@ -124,7 +130,7 @@ decoder decoder(
 .immediate_ext(sign_ext)
 );
 
-wire writedata;
+wire[31:0] writedata;
 data_memory data_memory(
 .clock(cpu_clk),
 .memWrite(memwrite),
@@ -134,7 +140,7 @@ data_memory data_memory(
 );
 
 
-wire shamt = ins_o[10:6];
+wire[4:0] shamt = ins_o[10:6];
 execute execute(
 .Read_data_1(read_data_1), //the source of Ainput
 .Read_data_2(read_data_2), //one of the sources of Binput
@@ -157,9 +163,10 @@ execute execute(
 wire ledctrl;
 wire switchctrl;
 wire padctrl;
-wire ioread_data;
+wire[31:0] ioread_data;
+wire sigctrl;
+
 memorio memorio(
-.inmode(inmode),
 .iodone(iodone),
 .address(alu_result),
 .memread(memread),
@@ -173,37 +180,92 @@ memorio memorio(
 .writedata(writedata),
 .ledctrl(ledctrl),
 .switchctrl(switchctrl),
-.padctrl(padctrl)
+.padctrl(padctrl),
+.sigctrl(sigctrl)
 );
 
 wire switch_data;
+wire[15:0] pad_data;
+
 ioreader ioreader(
 .reset(reset),// reset
 .ioread(ioread),//from ctrl
 .switchctrl(switchctrl),//if it is switch input
 .padctrl(padctrl),
 .ioread_data_switch(switch_data),  //data from switch
+.ioread_data_pad(pad_data),
 .ioread_data(ioread_data)//finally choose ioread_data
 );
 
+wire clk_1k_hz;
 
-//writedata[15:0] for led
-
-program_rom program_rom(
-.rom_clk_i(), // ROM clock
-.rom_adr_i(cur_pc),// From IFetch
-.Instruction_o(ins_i), // To IFetch
-// UART Programmer Pinouts
-.upg_rst_i(), // UPG reset (Active High)
-.upg_clk_i(), // UPG clock (10MHz)
-.upg_wen_i(), // UPG write enable
-.upg_adr_i(), // UPG write address
-.upg_dat_i(), // UPG write data
-.upg_done_i() // 1 if program finished
+clk_1k clk_1k1(
+.uart_clk(uart_clk),
+.clk_1k_hz(clk_1k_hz)
 );
 
-uart_bmpg_0 uart(
+wire[3:0]n1,n2,n3,n4,n5,n6,n7,n8;
+keypad_n keypad1(
+.line(line_pad),
+.row(row_pad),
+.clk(uart_clk),
+.o1(n1));
+//about the keypad
+pad_decode pad_decode1(
+.clk(clk_1k_hz),
+.in(n1),
+.padctrl(padctrl),
+.o1(n5),
+.o2(n6),
+.o3(n7),
+.o4(n8),
+.rst(reset),
+.o_4(pad_data));
 
+//about the sig_ledÊýÂë¹Ü
+sig_led_num_4 sig_led
+(
+.clk(clk_1k_hz),
+.rst(reset),
+.n(writedata),
+.sigctrl(sigctrl),
+.high(high_led),
+.value(value_led)
 );
+
+//about the led_light
+led_light led_light(
+.clk(cpu_clk),
+.rst(reset),
+.ledctrl(ledctrl),
+.wdata(writedata),
+.led_light(led)
+);
+
+switch switch(
+.clk(cpu_clk),
+.rst(reset),
+.switchctrl(switchctrl),
+.switch_data(switch_data),
+.switch_i(switch_in)
+);
+
+////writedata[15:0] for led
+//program_rom program_rom(
+//.rom_clk_i(), // ROM clock
+//.rom_adr_i(cur_pc),// From IFetch
+//.Instruction_o(ins_i), // To IFetch
+//// UART Programmer Pinouts
+//.upg_rst_i(), // UPG reset (Active High)
+//.upg_clk_i(), // UPG clock (10MHz)
+//.upg_wen_i(), // UPG write enable
+//.upg_adr_i(), // UPG write address
+//.upg_dat_i(), // UPG write data
+//.upg_done_i() // 1 if program finished
+//);
+
+//uart_bmpg_0 uart(
+
+//);
 
 endmodule
