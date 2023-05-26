@@ -20,22 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ioreader(reset,ioread,switchctrl,ioread_data,ioread_data_switch);
+module ioreader(reset,ioread,switchctrl,padctrl,ioread_data_switch,ioread_data_pad,ioread_data);
 
 input reset;// reset
 input ioread;//from ctrl
-input switchctrl;        //  从memorio经过地址高端线获得的拨码开关模块片选
-input[15:0] ioread_data_switch;  //data from switch
-output[15:0] ioread_data;    // to memorio
+input switchctrl;//from memorio
+input padctrl; //from memorop 
+input[31:0] ioread_data_switch;  //data from switch
+input[31:0] ioread_data_pad;
+output[31:0] ioread_data;    // to memorio
    
-reg[15:0] ioread_data;
+reg[31:0] ioread_data;
    
 always @* begin
-    if(reset == 1)
+    if(reset == 1'b1)
         ioread_data = 16'b0000000000000000;
-    else if(ioread == 1) begin
-        if(switchctrl == 1)
+    else if(ioread == 1'b1) begin
+        if(switchctrl == 1'b1)
             ioread_data = ioread_data_switch;
+        else if(padctrl == 1'b1)
+            ioread_data = ioread_data_pad;
         else   
             ioread_data = ioread_data;
     end

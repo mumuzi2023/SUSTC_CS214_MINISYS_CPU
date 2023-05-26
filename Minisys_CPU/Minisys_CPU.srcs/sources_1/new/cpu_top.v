@@ -20,9 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cpu_top(ori_clk,reset);
+module cpu_top(ori_clk,reset,inmode,outmode,iodone);
 input ori_clk;
 input reset;
+input inmode; // 0 switch, 1 pad
+input[1:0] outmode;// high light led, low led sig
+input iodone;
 
 
 wire cpu_clk;
@@ -153,8 +156,11 @@ execute execute(
 
 wire ledctrl;
 wire switchctrl;
+wire padctrl;
 wire ioread_data;
 memorio memorio(
+.inmode(inmode),
+.iodone(iodone),
 .address(alu_result),
 .memread(memread),
 .memwrite(memwrite),
@@ -166,7 +172,8 @@ memorio memorio(
 .readdata(readdata),
 .writedata(writedata),
 .ledctrl(ledctrl),
-.switchctrl(switchctrl)
+.switchctrl(switchctrl),
+.padctrl(padctrl)
 );
 
 wire switch_data;
@@ -174,6 +181,7 @@ ioreader ioreader(
 .reset(reset),// reset
 .ioread(ioread),//from ctrl
 .switchctrl(switchctrl),//if it is switch input
+.padctrl(padctrl),
 .ioread_data_switch(switch_data),  //data from switch
 .ioread_data(ioread_data)//finally choose ioread_data
 );
