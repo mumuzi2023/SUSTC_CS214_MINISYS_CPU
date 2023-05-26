@@ -20,3 +20,18 @@ in 输入，来自o1 4
 
 o1-o8 输出，o1为最新位 4
 
+rst reset bit
+
+o_4 输出 16
+
+
+
+led
+
+clk clk_1k_hz
+
+n1-n8 输入
+
+high led input
+
+value_led led output
