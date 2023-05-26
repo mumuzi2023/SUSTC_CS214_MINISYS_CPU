@@ -19,18 +19,22 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module controller(Op,Func,Jr,Jmp,Jal,Branch,nBranch,RegDST,MemtoReg,RegWrite,MemWrite,ALUSrc,Sftmd,ALUop,I_format);
+module controller(Op,Func,Alu_resultHigh,Jr,Jmp,Jal,Branch,nBranch,RegDST,MemorIOtoReg,RegWrite,MemWrite,MemRead,IOWrite,IORead,ALUSrc,Sftmd,ALUop,I_format);
 input[5:0] Op; // instruction[31:26], opcode
 input[5:0] Func; // instructions[5:0], funct
+input[21:0] Alu_resultHigh;//Alu_Result[31..10]
 output Jr ; // 1 indicates the instruction is "jr", otherwise it's not "jr" output Jmp; 
 output Jmp;
 output Jal; // 1 indicate the instruction is "jal", otherwise it's not
 output Branch; // 1 indicate the instruction is "beq" , otherwise it's not
 output nBranch; // 1 indicate the instruction is "bne", otherwise it's not
 output RegDST; // 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
-output MemtoReg; // 1 indicate read data from memory and write it into register
+output MemorIOtoReg; // 1 indicate read data from memory and write it into register
 output RegWrite; // 1 indicate write register(R,I(lw)), otherwise it's not
 output MemWrite; // 1 indicate write data memory, otherwise it's not
+output MemRead;
+output IOWrite;
+output IORead;
 output ALUSrc; // 1 indicate the 2nd data is immidiate (except "beq","bne")
 output Sftmd; // 1 indicate the instruction is shift instruction
 output[1:0] ALUop;
@@ -53,10 +57,15 @@ assign Jr = (Op==6'b000000 && Func == 6'b001000)? 1'b1:1'b0;
 assign Jmp = (Op==6'b000010) ? 1'b1 : 1'b0;
 assign Jal = (Op==6'b000011)? 1'b1:1'b0;
 
+
+assign MemorIOtoReg = lw;// only lw has mem to reg
+assign MemWrite = (sw  == 1'b1 && (Alu_resultHigh[21:0] != 22'b1111111111111111111111))?1'b1:1'b0;
+assign MemRead = (lw  == 1'b1&& (Alu_resultHigh[21:0] != 22'b1111111111111111111111))?1'b1:1'b0;
+assign IORead = (lw  == 1'b1&& (Alu_resultHigh[21:0] == 22'b1111111111111111111111))?1'b1:1'b0;
+assign IOWrite = (sw  == 1'b1&& (Alu_resultHigh[21:0] == 22'b1111111111111111111111))?1'b1:1'b0;
+
 assign RegDST = R_format; //reg destination , 1 rd,0 rt
-assign MemtoReg = lw;// only lw has mem to reg
 assign RegWrite = (I_format || lw || Jal || R_format) && ~Jr;
-assign MemWrite = sw;// only sw has mem write
 assign ALUSrc = (I_format || lw || sw); //1 indicate the 2nd data is immidiate (except "beq","bne")
 assign Sftmd = (Op == 6'b000000 && Func[5:3] == 3'b000)? 1'b1:1'b0; // shift mode
 assign ALUop = {(R_format || I_format),(Branch || nBranch)}; // ALU operation code
