@@ -131,3 +131,76 @@ expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation S
 unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aF, cj)
 // [Engine Memory]: 648 MB (+5357kb) [00:01:25]
 // HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 42 MB. Current time: 5/26/23 11:25:02 AM CST
+// Elapsed time: 598 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEST_FOR_SIG_LED (TEST_FOR_SIG_LED.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEST_FOR_SIG_LED (TEST_FOR_SIG_LED.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("TEST_FOR_SIG_LED.v", 114, 246); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 3, 99); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 1, 123); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 74, 238); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 97, 177); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 555, 200); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 555, 200, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 565, 200); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 565, 200, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 503, 200); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 507, 200); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 507, 200, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 507, 198); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 508, 197); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 508, 197); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 338, 222); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("TEST_FOR_SIG_LED.v", 349, 132); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 144, 170); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 128, 178); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 79, 160); // cd (w, cj)
+// Elapsed time: 272 seconds
+selectCodeEditor("TEST_FOR_SIG_LED.v", 187, 172); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 181, 164); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 181, 163, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 160, 186); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 160, 185, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 152, 167); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 152, 165, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 129, 182); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 129, 182, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 110, 168); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 109, 166, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 101, 189); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 100, 187, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("TEST_FOR_SIG_LED.v", 88, 155); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 77, 181); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 75, 169); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 69, 183); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 26, 82); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 26, 82, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "TEST_FOR_SIG_LED.v", 'c'); // cd (w, cj)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 24, 352); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 24, 351, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "TEST_FOR_SIG_LED.v", 'c'); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 28, 369); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 28, 369, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "TEST_FOR_SIG_LED.v", 'c'); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 27, 397); // cd (w, cj)
+selectCodeEditor("TEST_FOR_SIG_LED.v", 27, 397, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "TEST_FOR_SIG_LED.v", 'c'); // cd (w, cj)
+// Elapsed time: 228 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 397 seconds
+selectCodeEditor("TEST_FOR_SIG_LED.v", 105, 371); // cd (w, cj)
+typeControlKey((HResource) null, "TEST_FOR_SIG_LED.v", 'c'); // cd (w, cj)
+// Elapsed time: 173 seconds
+selectCodeEditor("TEST_FOR_SIG_LED.v", 376, 454); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 45 MB. Current time: 5/26/23 11:55:02 AM CST
