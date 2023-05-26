@@ -1,3 +1,6 @@
 *.wdf
 *.jou
 *.log
+*.wpc
+*.xml
+*.str
