@@ -133,13 +133,7 @@ decoder decoder(
 );
 
 wire[31:0] writedata;
-data_memory data_memory(
-.clock(cpu_clk),
-.memWrite(memwrite),
-.address(alu_result),
-.writeData(writedata),/////////////////////////////////////////////
-.readData(memory_data)
-);
+
 
 
 wire[4:0] shamt = ins_o[10:6];
@@ -252,19 +246,6 @@ switch switch(
 .switch_i(switch_in)
 );
 
-////writedata[15:0] for led
-//program_rom program_rom(
-//.rom_clk_i(), // ROM clock
-//.rom_adr_i(cur_pc),// From IFetch
-//.Instruction_o(ins_i), // To IFetch
-//// UART Programmer Pinouts
-//.upg_rst_i(), // UPG reset (Active High)
-//.upg_clk_i(), // UPG clock (10MHz)
-//.upg_wen_i(), // UPG write enable
-//.upg_adr_i(), // UPG write address
-//.upg_dat_i(), // UPG write data
-//.upg_done_i() // 1 if program finished
-//);
 //========================UART=================================
 wire upg_clk_w,upg_wen_w;// output clk,(unknown?)
 wire[14:0] upg_adr_w;//output address,first address is the bit for chosen data_m or program_m
@@ -282,22 +263,32 @@ uart_bmpg_0 uart(
 .upg_done_o(upg_done_w),//输出信号，告诉mem输出完毕，输出至m_ram and p_ram
 .upg_tx_o(tx));//uart 输出信号，向电脑反馈接收完毕，输出至外界，电脑
 //==============================================================
-//===============================MEM============================
-wire ram_wen_w;//链接controller
-wire[31:0] ram_adr_w;//链接ALU的alu_result
-wire[31:0] ram_dat_i_w;//链接decoder的read_data_2
-wire[31:0] ram_dat_o_w;//
+//===============================DATA_MEM============================
 data_memory_uart mem(
-.ram_clk_i(cpu_clk),
-.ram_wen_i(ram_wen_w),
-.ram_adr_i(ram_adr_w),
-.ram_dat_i(ram_dat_i_w),
-.ram_dat_o(ram_dat_o_w),
+.ram_clk_i(cpu_clk),//done
+.ram_wen_i(memwrite),//done
+.ram_adr_i(alu_result[15:2]),//done
+.ram_dat_i(writedata),//done
+.ram_dat_o(memory_data),//done
+.upg_rst_i(upg_rst),//maybe is also reset
+.upg_clk_i(upg_clk_w),//done
+.upg_wen_i(upg_wen_w&upg_adr_w[14]),//done
+.upg_adr_i(upg_adr_w[13:0]),//done
+.upg_dat_i(upg_dat_w),//done
+.upg_done_i(upg_done_w));//done
+//===================================================================
+//===============================PROGRAM_MEM=========================
+program_rom prgrom(
+.rom_clk_i(cpu_clk),
+.rom_adr_i(cur_pc[15:2]),
+.Instruction_o(ins_i),
 .upg_rst_i(upg_rst),
 .upg_clk_i(upg_clk_w),
-.upg_wen_i(upg_wen_w&upg_adr_w[14]),
-.upg_adr_i(upg_adr_w),
+.upg_wen_i(upg_wen_w&!upg_adr_w[14]),
+.upg_adr_i(upg_adr_w[13:0]),
 .upg_dat_i(upg_dat_w),
-.upg_done_i(upg_done_w));
+.upg_done_i(upg_done_w)
+);
+
 
 endmodule
