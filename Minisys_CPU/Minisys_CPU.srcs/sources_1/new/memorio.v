@@ -46,5 +46,5 @@ assign ledctrl = (iowrite == 1'b1)?1'b1:1'b0;
 assign switchctrl = (ioread == 1'b1 && address == 32'hFFFFFC60)?1'b1:1'b0;// simply ioread, complicately it is not only ioread
 assign padctrl = (ioread == 1'b1 && address == 32'hFFFFFC64)?1'b1:1'b0;
 assign ledctrl = (iowrite == 1'b1 && address == 32'hFFFFFC68)?1'b1:1'b0;
-assign sigctrl = (iowrite == 1'b1 && address == 32'hFFFFFC72)?1'b1:1'b0;
+assign sigctrl = (iowrite == 1'b1 && address == 32'hFFFFFC6C)?1'b1:1'b0;
 endmodule
