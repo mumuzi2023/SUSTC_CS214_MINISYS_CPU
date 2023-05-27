@@ -26,11 +26,11 @@ input reset;// reset
 input ioread;//from ctrl
 input switchctrl;//from memorio
 input padctrl; //from memorop 
-input[31:0] ioread_data_switch;  //data from switch
-input[31:0] ioread_data_pad;
-output[31:0] ioread_data;    // to memorio
+input[15:0] ioread_data_switch;  //data from switch
+input[15:0] ioread_data_pad;
+output reg[15:0] ioread_data;    // to memorio
    
-reg[31:0] ioread_data;
+
    
 always @* begin
     if(reset == 1'b1)

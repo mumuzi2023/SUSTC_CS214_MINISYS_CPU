@@ -24,10 +24,9 @@ module sig_led_num_4(clk,rst,n,sigctrl,high,value);
 input clk;
 input rst;
 input sigctrl;
-input[15:0]n;
+input[15:0] n;
 output reg[7:0] high;
 output reg[7:0] value;
-
 wire[3:0] n1,n2,n3,n4;
 wire[7:0] high1,value1;
 reg [3:0]n5=0,n6=0,n7=0,n8=0;

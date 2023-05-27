@@ -41,7 +41,8 @@ cpuclk cpuclk(
 .single_cycle_cpu_clk(cpu_clk),
 .uart_clk(uart_clk)
 );
-
+wire[31:0] ins_o;//from ifetch
+wire[31:0] ins_i;//from program_rom
 wire[5:0] opcode;
 wire[5:0] func;
 wire jr;
@@ -61,11 +62,12 @@ wire sftmd;
 wire[1:0] aluop;
 wire I_format;
 wire[31:0] alu_result;
-
+assign opcode = ins_o[31:26];
+assign func = ins_o[5:0];
 controller controller(
 .Op(opcode),
 .Func(func), 
-.ALU_resultHigh(alu_result[31:10]),
+.Alu_resultHigh(alu_result[31:10]),
 .Jr(jr),
 .Jmp(jmp),
 .Jal(jal),
@@ -84,8 +86,7 @@ controller controller(
 .I_format(I_format)
 );
 
-wire[31:0] ins_o;//from ifetch
-wire[31:0] ins_i;//from program_rom
+
 wire[31:0] branch_base_addr;
 wire[31:0] link_addr;
 wire[31:0] cur_pc;
@@ -159,7 +160,7 @@ execute execute(
 wire ledctrl;
 wire switchctrl;
 wire padctrl;
-wire[31:0] ioread_data;
+wire[15:0] ioread_data;
 wire sigctrl;
 
 memorio memorio(
@@ -180,7 +181,7 @@ memorio memorio(
 .sigctrl(sigctrl)
 );
 
-wire switch_data;
+wire[15:0] switch_data;
 wire[15:0] pad_data;
 
 ioreader ioreader(
@@ -223,7 +224,7 @@ sig_led_num_4 sig_led
 (
 .clk(clk_1k_hz),
 .rst(reset),
-.n(writedata),
+.n(writedata[15:0]),
 .sigctrl(sigctrl),
 .high(high_led),
 .value(value_led)
@@ -234,7 +235,7 @@ led_light led_light(
 .clk(cpu_clk),
 .rst(reset),
 .ledctrl(ledctrl),
-.wdata(writedata),
+.wdata(writedata[15:0]),
 .led_light(led)
 );
 

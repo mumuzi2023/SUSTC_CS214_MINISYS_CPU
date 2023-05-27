@@ -22,13 +22,13 @@
 
 module memorio(iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,sigctrl,switchctrl,padctrl);
 input iodone;// io is done
-input address;
+input[31:0] address;
 input memread;
 input memwrite;
 input ioread;
 input iowrite;
 input[31:0] memory_data;
-input[31:0] ioread_data;
+input[15:0] ioread_data;
 input[31:0] oridata;
 output[31:0] readdata;// finally choice of mem or io data
 output[31:0] writedata;
@@ -42,7 +42,7 @@ assign readdata = (ioread==1'b1)?((address == 32'hFFFFFC80)?((iodone==1'b0)?32'h
 //here determine the format of memory input or io input if all 32 bits, it can be neglected.
 assign writedata = (iowrite==1'b1)?oridata:oridata;
 
-assign ledctrl = (iowrite == 1'b1)?1'b1:1'b0;
+
 assign switchctrl = (ioread == 1'b1 && address == 32'hFFFFFC60)?1'b1:1'b0;// simply ioread, complicately it is not only ioread
 assign padctrl = (ioread == 1'b1 && address == 32'hFFFFFC64)?1'b1:1'b0;
 assign ledctrl = (iowrite == 1'b1 && address == 32'hFFFFFC68)?1'b1:1'b0;

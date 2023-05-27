@@ -29,7 +29,7 @@ input RegWrite;
 input RegDST;// 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
 input MemorIOtoReg;
 input jal;//jal need to write address to $ra
-input link_addr; // from ifetch
+input[31:0] link_addr; // from ifetch
 input[31:0] alu_result;//write data
 input[31:0] memorio_data;//ReadData from memory or io
 output[31:0] read_data_1;
