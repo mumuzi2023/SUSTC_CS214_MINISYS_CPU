@@ -20,8 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,line_pad);
-
+module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,line_pad,rx,tx,upg_rst);
+input rx;
+input upg_rst;
+output tx;
 input ori_clk;
 input reset;
 input iodone;
@@ -196,14 +198,14 @@ ioreader ioreader(
 .ioread_data_pad(pad_data),
 .ioread_data(ioread_data)//finally choose ioread_data
 );
-
+//=============LOW FREQ CLK======================
 wire clk_1k_hz;
-
 clk_1k clk_1k1(
 .uart_clk(uart_clk),
 .clk_1k_hz(clk_1k_hz)
 );
-
+//===============================================
+//===================PAD=========================
 wire[3:0]n1,n2,n3,n4,n5,n6,n7,n8;
 keypad_n keypad1(
 .line(line_pad),
@@ -221,8 +223,8 @@ pad_decode pad_decode1(
 .o4(n8),
 .rst(reset),
 .o_4(pad_data));
-
-//about the sig_led数码管
+//================================================
+//====================数码管======================
 sig_led_num_4 sig_led
 (
 .clk(clk_1k_hz),
@@ -232,8 +234,8 @@ sig_led_num_4 sig_led
 .high(high_led),
 .value(value_led)
 );
-
-//about the led_light
+//===================================================
+//=================led_light=========================
 led_light led_light(
 .clk(cpu_clk),
 .rst(reset),
@@ -263,9 +265,39 @@ switch switch(
 //.upg_dat_i(), // UPG write data
 //.upg_done_i() // 1 if program finished
 //);
+//========================UART=================================
+wire upg_clk_w,upg_wen_w;// output clk,(unknown?)
+wire[14:0] upg_adr_w;//output address,first address is the bit for chosen data_m or program_m
+wire[31:0] upg_dat_w;//output data
+wire upg_done_w;//finish bit
 
-//uart_bmpg_0 uart(
-
-//);
+uart_bmpg_0 uart(
+.upg_clk_i(uart_clk),//输入时钟，用于对齐信号输入，来自clk
+.upg_rst_i(upg_rst),//重置信号，用于重置uart，来自重置按钮
+.upg_rx_i(rx),//uart 信号接收器,来自外界，来自电脑
+.upg_clk_o(upg_clk_w),//uart 输出使用时钟频率，输出至m_ram and p_ram
+.upg_wen_o(upg_wen_w),//写内存信号，输出至m_ram and p_ram
+.upg_adr_o(upg_adr_w),//地址，输出至m_ram and p_ram
+.upg_dat_o(upg_dat_w),//数据，输出至m_ram and p_ram
+.upg_done_o(upg_done_w),//输出信号，告诉mem输出完毕，输出至m_ram and p_ram
+.upg_tx_o(tx));//uart 输出信号，向电脑反馈接收完毕，输出至外界，电脑
+//==============================================================
+//===============================MEM============================
+wire ram_wen_w;//链接controller
+wire[31:0] ram_adr_w;//链接ALU的alu_result
+wire[31:0] ram_dat_i_w;//链接decoder的read_data_2
+wire[31:0] ram_dat_o_w;//
+data_memory_uart mem(
+.ram_clk_i(cpu_clk),
+.ram_wen_i(ram_wen_w),
+.ram_adr_i(ram_adr_w),
+.ram_dat_i(ram_dat_i_w),
+.ram_dat_o(ram_dat_o_w),
+.upg_rst_i(upg_rst),
+.upg_clk_i(upg_clk_w),
+.upg_wen_i(upg_wen_w&upg_adr_w[14]),
+.upg_adr_i(upg_adr_w),
+.upg_dat_i(upg_dat_w),
+.upg_done_i(upg_done_w));
 
 endmodule

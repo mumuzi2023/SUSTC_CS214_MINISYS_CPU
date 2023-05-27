@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
+ module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
 output[31:0] Instruction_o; // the instruction fetched from this module to Decoder and Controller
 output[31:0] branch_base_addr; // (pc+4) to ALU which is used by branch type instruction
 output[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
