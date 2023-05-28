@@ -29,5 +29,5 @@ begin
     clk<=clk+1;
 end
 assign clk_1k_hz=clk[9:9];
-assign clk_led=clk[16:16];
+assign clk_led=clk[12:12];
 endmodule

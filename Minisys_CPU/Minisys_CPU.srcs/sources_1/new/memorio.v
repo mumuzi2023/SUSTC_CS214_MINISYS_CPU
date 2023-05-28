@@ -51,7 +51,7 @@ assign padctrl = (ioread == 1'b1 && address == 32'hFFFFFC64)?1'b1:1'b0;
 assign ledctrl = (iowrite == 1'b1 && address == 32'hFFFFFC68)?1'b1:1'b0;
 assign sigctrl = (iowrite == 1'b1 && address == 32'hFFFFFC6C)?1'b1:1'b0;
 assign led_tctrl = (iowrite == 1'b1 && address == 32'hFFFFFC70)?1'b1:1'b0;
-assign uart_ctrl = (iowrite == 1'b1 && address == 32'hFFFFFC74)?1'b1:1'b0;
+assign uart_ctrl = (iowrite == 1'b1 && address == 32'hFFFFFC72)?1'b1:1'b0;
 
 
 endmodule
