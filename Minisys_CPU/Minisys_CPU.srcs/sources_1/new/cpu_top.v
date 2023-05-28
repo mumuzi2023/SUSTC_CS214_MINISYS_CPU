@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,line_pad,rx,tx,upg_rst);
+module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,led_test,line_pad,rx,tx,upg_rst);
 input rx;
 input upg_rst;
 output tx;
@@ -32,6 +32,7 @@ input[3:0] row_pad;
 output [7:0]high_led,value_led;
 output [15:0]led;
 output [3:0]line_pad;
+output [2:0] led_test;
 
 wire cpu_clk;
 wire uart_clk;
@@ -41,6 +42,13 @@ cpuclk cpuclk(
 .single_cycle_cpu_clk(cpu_clk),
 .uart_clk(uart_clk)
 );
+//=============LOW FREQ CLK======================
+wire clk_1k_hz;
+clk_1k clk_1k1(
+.uart_clk(uart_clk),
+.clk_1k_hz(clk_1k_hz)
+);
+//===============================================
 wire[31:0] ins_o;//from ifetch
 wire[31:0] ins_i;//from program_rom
 wire[5:0] opcode;
@@ -162,9 +170,39 @@ wire switchctrl;
 wire padctrl;
 wire[15:0] ioread_data;
 wire sigctrl;
+wire led_tctrl;
+
+//////avoid twitter
+reg iodone_atwitter;
+reg pre_iodone;
+wire iodone_d;
+button_decode bd1(
+.clk(clk_1k_hz),
+.in(iodone),
+.out(iodone_d)
+);
+
+reg [2:0] clk;
+always@(posedge cpu_clk)
+begin
+    clk<=clk+1;
+end
+wire clk_3 = clk[2];
+
+always@(posedge clk_3)begin
+    if(pre_iodone==1'b1 && iodone_d == 1'b0)begin
+        iodone_atwitter = 1'b1;
+        pre_iodone = iodone_d;
+    end
+    else begin
+        iodone_atwitter = 1'b0;
+        pre_iodone = iodone_d;
+    end
+end
+////////
 
 memorio memorio(
-.iodone(iodone),
+.iodone(iodone_atwitter),
 .address(alu_result),
 .memread(memread),
 .memwrite(memwrite),
@@ -178,7 +216,8 @@ memorio memorio(
 .ledctrl(ledctrl),
 .switchctrl(switchctrl),
 .padctrl(padctrl),
-.sigctrl(sigctrl)
+.sigctrl(sigctrl),
+.led_tctrl(led_tctrl)
 );
 
 wire[15:0] switch_data;
@@ -193,13 +232,7 @@ ioreader ioreader(
 .ioread_data_pad(pad_data),
 .ioread_data(ioread_data)//finally choose ioread_data
 );
-//=============LOW FREQ CLK======================
-wire clk_1k_hz;
-clk_1k clk_1k1(
-.uart_clk(uart_clk),
-.clk_1k_hz(clk_1k_hz)
-);
-//===============================================
+
 //===================PAD=========================
 wire[3:0]n1,n2,n3,n4,n5,n6,n7,n8;
 keypad_n keypad1(
@@ -237,6 +270,14 @@ led_light led_light(
 .ledctrl(ledctrl),
 .wdata(writedata[15:0]),
 .led_light(led)
+);
+
+led_testcase led_t(
+.clk(cpu_clk),
+.rst(reset),
+.led_tctrl(led_tctrl),
+.wdata(writedata[2:0]),
+.led_light(led_test)
 );
 
 switch switch(

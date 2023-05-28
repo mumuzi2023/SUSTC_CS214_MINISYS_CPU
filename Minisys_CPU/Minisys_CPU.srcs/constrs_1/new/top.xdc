@@ -42,3 +42,11 @@ set_property PACKAGE_PIN P4 [get_ports reset]
 set_property IOSTANDARD LVCMOS33 [get_ports reset]
 set_property IOSTANDARD LVCMOS33 [get_ports iodone]
 set_property PACKAGE_PIN R1 [get_ports iodone]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_test[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_test[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_test[0]}]
+set_property PACKAGE_PIN K17 [get_ports {led_test[2]}]
+set_property PACKAGE_PIN L13 [get_ports {led_test[1]}]
+set_property PACKAGE_PIN M13 [get_ports {led_test[0]}]
