@@ -23,7 +23,8 @@
 module uart_tx(
 	input 			sys_clk,	//50M系统时钟
 	input	[7:0] 	uart_data,	//发送的8位置数据
-	output reg 		uart_txd	//串口发送数据线
+	output reg 		uart_txd,	//串口发送数据线
+	input uart_ctrl
 
 );
 reg sys_rst_n=1,uart_tx_en=0;
@@ -34,7 +35,8 @@ localparam	BPS_CNT=SYS_CLK_FRE/BPS;   //传输一位数据所需要的时钟个数
 reg	uart_tx_en_d0;			//寄存1拍
 reg uart_tx_en_d1;			//寄存2拍
 reg tx_flag;				//发送标志位
-reg [7:0]  uart_data_reg,d1;	//发送数据寄存器
+reg [7:0]  uart_data_reg;	//发送数据寄存器
+reg uc;
 reg [15:0] clk_cnt;			//时钟计数器
 reg [3:0]  tx_cnt;			//发送个数计数器
 reg [2:0] cnt=0;
@@ -44,10 +46,10 @@ wire pos_uart_en_txd;		//使能信号的上升沿
 assign pos_uart_en_txd= uart_tx_en_d0 && (~uart_tx_en_d1);
 //======================检测到信号改变开始===============
 always @(posedge sys_clk)begin
-    if (uart_data!=d1)begin cnt<=0;uart_tx_en<=1;end
+    if (uc==0&&uart_ctrl==1)begin cnt<=0;uart_tx_en<=1;end
     else if(cnt!=0) begin cnt<=cnt+1;end
     else begin uart_tx_en<=0;end
-    d1<=uart_data;
+    uc<=uart_ctrl;
 end
 //========================================================
 always @(posedge sys_clk)begin
