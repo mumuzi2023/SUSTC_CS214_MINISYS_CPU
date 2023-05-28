@@ -23,7 +23,7 @@
 module cpu_top(ori_clk,reset,iodone,switch_in,row_pad,high_led,value_led,led,led_test,line_pad,rx,tx,upg_rst);
 input rx;
 input upg_rst;
-output tx;
+output reg tx;
 input ori_clk;
 input reset;
 input iodone;
@@ -33,6 +33,8 @@ output [7:0]high_led,value_led;
 output [15:0]led;
 output [3:0]line_pad;
 output [2:0] led_test;
+
+
 
 wire cpu_clk;
 wire uart_clk;
@@ -300,12 +302,30 @@ switch switch(
 .switch_data(switch_data),
 .switch_i(switch_in)
 );
-
-//========================UART=================================
+//========================INIT_UART============================
 wire upg_clk_w,upg_wen_w;// output clk,(unknown?)
 wire[14:0] upg_adr_w;//output address,first address is the bit for chosen data_m or program_m
 wire[31:0] upg_dat_w;//output data
 wire upg_done_w;//finish bit
+wire tx_1;
+wire tx_2;
+reg uart_state;
+always@(*)begin
+if(upg_rst)uart_state<=1;
+else if(upg_done_w)uart_state<=0;
+end
+always@(*)begin
+if(uart_state)tx<=tx_1;
+else tx<=tx_2;
+end
+//assign tx=uart_state?tx_1;tx_2;
+
+//========================MY_UART==============================
+uart_tx(.sys_clk(ori_clk),.uart_data(n5),.uart_txd(tx_2));
+//=============================================================
+
+//========================UART=================================
+
 
 uart_bmpg_0 uart(
 .upg_clk_i(uart_clk),//输入时钟，用于对齐信号输入，来自clk
@@ -316,8 +336,9 @@ uart_bmpg_0 uart(
 .upg_adr_o(upg_adr_w),//地址，输出至m_ram and p_ram
 .upg_dat_o(upg_dat_w),//数据，输出至m_ram and p_ram
 .upg_done_o(upg_done_w),//输出信号，告诉mem输出完毕，输出至m_ram and p_ram
-.upg_tx_o(tx));//uart 输出信号，向电脑反馈接收完毕，输出至外界，电脑
+.upg_tx_o(tx_1));//uart 输出信号，向电脑反馈接收完毕，输出至外界，电脑
 //==============================================================
+
 //===============================DATA_MEM============================
 data_memory_uart mem(
 .ram_clk_i(cpu_clk),//done

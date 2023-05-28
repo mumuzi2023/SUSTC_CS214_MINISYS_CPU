@@ -75,7 +75,7 @@ always @* begin  // 6÷÷“∆Œª÷∏¡Ó
     always @* begin
         //set type operation (slt, slti, sltu, sltiu)
         if(((ALU_ctl==3'b111) && (Exe_code[3]==1))||((ALU_ctl[2:1]==2'b11) && (I_format==1))) 
-            ALU_Result = (Ainput - Binput<0)?32'h00000001:32'h00000000;
+            ALU_Result = (Exe_code[2:0]==3'b011)?(Ainput<Binput):$signed(Ainput) < $signed(Binput);
         //lui operation
         else if((ALU_ctl==3'b101) && (I_format==1))
             ALU_Result[31:0] = {{Binput[15:0]},{16{1'b0}}};   //lui data
