@@ -23,7 +23,7 @@
  module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
 output[31:0] Instruction_o; // the instruction fetched from this module to Decoder and Controller
 output[31:0] branch_base_addr; // (pc+4) to ALU which is used by branch type instruction
-output reg[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
+output[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
 output[31:0] cur_pc; // current PC value
 input[31:0] Instruction_i; // instruction from program memory
 //from CPU TOP
@@ -61,19 +61,19 @@ else
 end
 
 //branch_base_address shift right two bits when calculating
-
+reg[31:0] links;
 //program memory get instruction by PC in the posedge, so change PC in negedge to prevent conflicts.
 always @(negedge clock) begin
 if(reset == 1)
      PC <= 32'h0000_0000;
 else begin
      if(Jal == 1'b1)begin
-         link_addr <= PC + 32'h0000_0004;
+         links <= PC + 32'h0000_0004;
      end
      PC <= Next_PC;
 end
 end
-
+assign link_addr = links;
 // to ALU
 assign branch_base_addr = PC + 32'h0000_0004;
 assign Instruction_o = Instruction_i;
