@@ -2,13 +2,13 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun May 28 21:08:32 2023
-# Process ID: 22664
-# Current directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1
+# Start of session at: Mon May 29 02:11:03 2023
+# Process ID: 2292
+# Current directory: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1
 # Command line: vivado.exe -log prgrom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source prgrom.tcl
-# Log file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1/prgrom.vds
-# Journal file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1\vivado.jou
+# Log file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1/prgrom.vds
+# Journal file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/prgrom_synth_1\vivado.jou
 #-----------------------------------------------------------
 source prgrom.tcl -notrace
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP prgrom, cache-ID = ae19c5e0256da53d.
-INFO: [Common 17-206] Exiting Vivado at Sun May 28 21:08:37 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 02:11:07 2023...

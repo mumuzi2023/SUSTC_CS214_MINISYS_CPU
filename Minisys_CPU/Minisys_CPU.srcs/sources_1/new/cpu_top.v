@@ -172,6 +172,7 @@ execute execute(
 wire ledctrl;
 wire switchctrl;
 wire padctrl;
+wire uart_ctrl;
 wire[15:0] ioread_data;
 wire sigctrl;
 wire led_tctrl;
@@ -233,7 +234,8 @@ memorio memorio(
 .switchctrl(switchctrl),
 .padctrl(padctrl),
 .sigctrl(sigctrl),
-.led_tctrl(led_tctrl)
+.led_tctrl(led_tctrl),
+.uart_ctrl(uart_ctrl)
 );
 
 wire[15:0] switch_data;
@@ -325,7 +327,12 @@ end
 //assign tx=uart_state?tx_1;tx_2;
 
 //========================MY_UART==============================
-uart_tx(.sys_clk(ori_clk),.uart_data(vvv),.uart_txd(tx_2));
+uart_tx(
+.sys_clk(ori_clk),
+.uart_data(writedata[7:0]),
+.uart_txd(tx_2),
+.uart_ctrl(uart_ctrl)
+);
 //=============================================================
 
 //========================UART=================================

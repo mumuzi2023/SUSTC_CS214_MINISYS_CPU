@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module memorio(iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,sigctrl,switchctrl,padctrl,led_tctrl);
+module memorio(iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,sigctrl,switchctrl,padctrl,led_tctrl,uart_ctrl);
 input iodone;// io is done
 input[31:0] address;
 input memread;
@@ -37,6 +37,7 @@ output sigctrl;
 output switchctrl;
 output padctrl;
 output led_tctrl;
+output uart_ctrl;
 
 
 //address 32'hFFFFFC80 is the check address of memory
@@ -50,6 +51,7 @@ assign padctrl = (ioread == 1'b1 && address == 32'hFFFFFC64)?1'b1:1'b0;
 assign ledctrl = (iowrite == 1'b1 && address == 32'hFFFFFC68)?1'b1:1'b0;
 assign sigctrl = (iowrite == 1'b1 && address == 32'hFFFFFC6C)?1'b1:1'b0;
 assign led_tctrl = (iowrite == 1'b1 && address == 32'hFFFFFC70)?1'b1:1'b0;
+assign uart_ctrl = (iowrite == 1'b1 && address == 32'hFFFFFC74)?1'b1:1'b0;
 
 
 endmodule
