@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc rfile:../../../Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc rfile:../../../Minisys_CPU.srcs/constrs_1/new/top.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc rfile:../../../Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc rfile:../../../Minisys_CPU.srcs/constrs_1/new/top.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:25 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A18 [get_ports {high_led[7]}]
 set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]

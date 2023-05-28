@@ -20,13 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module clk_1k(uart_clk,clk_1k_hz);
+module clk_1k(uart_clk,clk_1k_hz,clk_led);
 input uart_clk;
-output clk_1k_hz;
-reg [9:0] clk;
+output clk_1k_hz,clk_led;
+reg [19:0] clk;
 always@(posedge uart_clk)
 begin
     clk<=clk+1;
 end
 assign clk_1k_hz=clk[9:9];
+assign clk_led=clk[14:14];
 endmodule

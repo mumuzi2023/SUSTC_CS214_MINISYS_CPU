@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Sun May 28 09:45:48 2023
+// Date        : Sun May 28 09:45:47 2023
 // Host        : DESKTOP-9VRBO84 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top prgrom -prefix
+//               prgrom_ prgrom_sim_netlist.v
 // Design      : prgrom
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -192,7 +192,6 @@ module prgrom
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "bindec" *) 
 module prgrom_bindec
    (ena_array,
     addra);
@@ -216,7 +215,6 @@ module prgrom_bindec
         .O(ena_array[1]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module prgrom_blk_mem_gen_generic_cstr
    (douta,
     addra,
@@ -493,7 +491,6 @@ module prgrom_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_mux" *) 
 module prgrom_blk_mem_gen_mux
    (douta,
     addra,
@@ -867,7 +864,6 @@ module prgrom_blk_mem_gen_mux
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module prgrom_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -1368,7 +1364,6 @@ module prgrom_blk_mem_gen_prim_width__parameterized9
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module prgrom_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -4975,7 +4970,6 @@ module prgrom_blk_mem_gen_prim_wrapper_init__parameterized9
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module prgrom_blk_mem_gen_top
    (douta,
     addra,
@@ -5026,7 +5020,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "16384" *) (* C_WRITE_DEPTH_B = "16384" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_4_1" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module prgrom_blk_mem_gen_v8_4_1
    (clka,
     rsta,
@@ -5288,7 +5282,6 @@ module prgrom_blk_mem_gen_v8_4_1
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_1_synth" *) 
 module prgrom_blk_mem_gen_v8_4_1_synth
    (douta,
     addra,

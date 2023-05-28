@@ -45,10 +45,11 @@ cpuclk cpuclk(
 .uart_clk(uart_clk)
 );
 //=============LOW FREQ CLK======================
-wire clk_1k_hz;
+wire clk_1k_hz,clk_led;
 clk_1k clk_1k1(
 .uart_clk(uart_clk),
-.clk_1k_hz(clk_1k_hz)
+.clk_1k_hz(clk_1k_hz),
+.clk_led(clk_led)
 );
 //===============================================
 wire[31:0] ins_o;//from ifetch
@@ -190,15 +191,15 @@ reg clk_3;
 always@(posedge cpu_clk)
 begin
     if(reset)begin
-        clk = 2'b00;
-        clk_3 = 0;
+        clk <= 2'b00;
+        clk_3 <= 0;
     end
     if(clk == 2'b11)begin
-        clk = 2'b00;
-        clk_3 = !clk_3; 
+        clk <= 2'b00;
+        clk_3 <= !clk_3; 
     end
     else begin
-        clk = clk + 2'b01;
+        clk <= clk + 2'b01;
     end
 end
 
@@ -206,12 +207,12 @@ end
 
 always@(posedge clk_3)begin
     if(pre_iodone==1'b1 && iodone_d == 1'b0)begin
-        iodone_atwitter= 1'b1;
-        pre_iodone = iodone_d;
+        iodone_atwitter<= 1'b1;
+        pre_iodone <= iodone_d;
     end
     else begin
-        iodone_atwitter = 1'b0;
-        pre_iodone = iodone_d;
+        iodone_atwitter <= 1'b0;
+        pre_iodone <= iodone_d;
     end
 end
 ////////
@@ -270,7 +271,8 @@ pad_decode pad_decode1(
 //====================ÊýÂë¹Ü======================
 sig_led_num_4 sig_led
 (
-.clk(clk_1k_hz),
+.clk(clk_led),
+.cpuclk(cpu_clk),
 .rst(reset),
 .n(writedata[15:0]),
 .sigctrl(sigctrl),
@@ -321,7 +323,7 @@ end
 //assign tx=uart_state?tx_1;tx_2;
 
 //========================MY_UART==============================
-uart_tx(.sys_clk(ori_clk),.uart_data(n5),.uart_txd(tx_2));
+uart_tx(.sys_clk(ori_clk),.uart_data({n6,n5}),.uart_txd(tx_2));
 //=============================================================
 
 //========================UART=================================
