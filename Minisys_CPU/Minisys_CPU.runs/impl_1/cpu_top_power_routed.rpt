@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun May 28 23:53:04 2023
+| Date             : Mon May 29 01:44:58 2023
 | Host             : Gao running 64-bit major release  (build 9200)
 | Command          : report_power -file cpu_top_power_routed.rpt -pb cpu_top_power_summary_routed.pb -rpx cpu_top_power_routed.rpx
 | Design           : cpu_top
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        6 |       --- |             --- |
-| Slice Logic             |     0.004 |     5234 |       --- |             --- |
-|   LUT as Logic          |     0.003 |     2658 |     63400 |            4.19 |
+| Slice Logic             |     0.004 |     5241 |       --- |             --- |
+|   LUT as Logic          |     0.003 |     2664 |     63400 |            4.20 |
 |   CARRY4                |    <0.001 |      113 |     15850 |            0.71 |
-|   F7/F8 Muxes           |    <0.001 |      333 |     63400 |            0.53 |
-|   Register              |    <0.001 |     1672 |    126800 |            1.32 |
+|   F7/F8 Muxes           |    <0.001 |      334 |     63400 |            0.53 |
+|   Register              |    <0.001 |     1674 |    126800 |            1.32 |
 |   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       10 |     19000 |            0.05 |
 |   Others                |     0.000 |      140 |       --- |             --- |
-| Signals                 |     0.005 |     4426 |       --- |             --- |
+| Signals                 |     0.005 |     4427 |       --- |             --- |
 | Block RAM               |     0.002 |       29 |       135 |           21.48 |
 | MMCM                    |     0.106 |        1 |         6 |           16.67 |
 | I/O                     |     0.017 |       65 |       285 |           22.81 |
@@ -197,7 +197,7 @@ Table of Contents
 |                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[9].ram.r                                                  |    <0.001 |
 |                 prim_init.ram                                                   |    <0.001 |
-|   nolabel_line326                                                               |     0.001 |
+|   nolabel_line328                                                               |     0.001 |
 |   pad_decode1                                                                   |    <0.001 |
 |   prgrom                                                                        |     0.005 |
 |     instmem                                                                     |     0.002 |

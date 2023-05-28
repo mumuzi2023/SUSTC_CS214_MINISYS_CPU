@@ -20,16 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module sig_led_num_4(clk,cpuclk,rst,n,sigctrl,high,value);
+module sig_led_num_4(clk,cpuclk,rst,n,sigctrl,high,value,v);
 input cpuclk;
 input clk;
 input rst;
 input sigctrl;
 input[15:0] n;
 output [7:0] high;
-output [7:0] value;
+output [7:0] value,v;
 wire[3:0] n1,n2,n3,n4;
 reg [15:0]nn;
+assign v=nn;
 //wire[7:0] value1;
 reg [3:0]n5=0,n6=0,n7=0,n8=0;
 assign n1=nn%10;

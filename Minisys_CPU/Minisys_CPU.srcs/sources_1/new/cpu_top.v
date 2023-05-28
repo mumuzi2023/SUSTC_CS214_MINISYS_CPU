@@ -268,6 +268,7 @@ pad_decode pad_decode1(
 .rst(reset),
 .o_4(pad_data));
 //================================================
+wire [7:0]vvv;
 //====================ÊýÂë¹Ü======================
 sig_led_num_4 sig_led
 (
@@ -277,7 +278,8 @@ sig_led_num_4 sig_led
 .n(writedata[15:0]),
 .sigctrl(sigctrl),
 .high(high_led),
-.value(value_led)
+.value(value_led),
+.v(vvv)
 );
 //===================================================
 //=================led_light=========================
@@ -323,7 +325,7 @@ end
 //assign tx=uart_state?tx_1;tx_2;
 
 //========================MY_UART==============================
-uart_tx(.sys_clk(ori_clk),.uart_data({n6,n5}),.uart_txd(tx_2));
+uart_tx(.sys_clk(ori_clk),.uart_data(vvv),.uart_txd(tx_2));
 //=============================================================
 
 //========================UART=================================
