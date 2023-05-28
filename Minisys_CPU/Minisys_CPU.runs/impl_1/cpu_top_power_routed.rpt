@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun May 28 09:22:43 2023
+| Date             : Sun May 28 09:50:59 2023
 | Host             : DESKTOP-9VRBO84 running 64-bit major release  (build 9200)
 | Command          : report_power -file cpu_top_power_routed.rpt -pb cpu_top_power_summary_routed.pb -rpx cpu_top_power_routed.rpx
 | Design           : cpu_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.227        |
+| Total On-Chip Power (W)  | 0.228        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.129        |
+| Dynamic (W)              | 0.130        |
 | Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 84.4         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.001 |        6 |       --- |             --- |
-| Slice Logic             |     0.004 |     5074 |       --- |             --- |
-|   LUT as Logic          |     0.004 |     2577 |     63400 |            4.06 |
+| Slice Logic             |     0.004 |     5068 |       --- |             --- |
+|   LUT as Logic          |     0.004 |     2573 |     63400 |            4.06 |
 |   CARRY4                |    <0.001 |       97 |     15850 |            0.61 |
 |   F7/F8 Muxes           |    <0.001 |      365 |     63400 |            0.58 |
-|   Register              |    <0.001 |     1574 |    126800 |            1.24 |
+|   Register              |    <0.001 |     1572 |    126800 |            1.24 |
 |   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       10 |     19000 |            0.05 |
 |   Others                |     0.000 |      135 |       --- |             --- |
-| Signals                 |     0.004 |     4367 |       --- |             --- |
+| Signals                 |     0.005 |     4359 |       --- |             --- |
 | Block RAM               |     0.002 |       29 |       135 |           21.48 |
 | MMCM                    |     0.106 |        1 |         6 |           16.67 |
 | I/O                     |     0.012 |       62 |       285 |           21.75 |
 | Static Power            |     0.099 |          |           |                 |
-| Total                   |     0.227 |          |           |                 |
+| Total                   |     0.228 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.012 |      0.016 |
+| Vccint    |       1.000 |     0.028 |       0.012 |      0.016 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,7 +148,7 @@ Table of Contents
 +---------------------------------------------------------------------------------+-----------+
 | Name                                                                            | Power (W) |
 +---------------------------------------------------------------------------------+-----------+
-| cpu_top                                                                         |     0.129 |
+| cpu_top                                                                         |     0.130 |
 |   clk_1k1                                                                       |    <0.001 |
 |   cpuclk                                                                        |     0.106 |
 |     inst                                                                        |     0.106 |
@@ -205,35 +205,35 @@ Table of Contents
 |               bindec_a.bindec_inst_a                                            |    <0.001 |
 |               has_mux_a.A                                                       |    <0.001 |
 |               ramloop[0].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[10].ram.r                                                 |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[11].ram.r                                                 |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[12].ram.r                                                 |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[13].ram.r                                                 |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[14].ram.r                                                 |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[1].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[2].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[3].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[4].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[5].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[6].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[7].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[8].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |               ramloop[9].ram.r                                                  |    <0.001 |
-|                 prim_noinit.ram                                                 |    <0.001 |
+|                 prim_init.ram                                                   |    <0.001 |
 |   sig_led                                                                       |    <0.001 |
 |     sig_led1                                                                    |    <0.001 |
 |   switch                                                                        |    <0.001 |

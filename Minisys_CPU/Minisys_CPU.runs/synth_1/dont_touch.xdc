@@ -5,8 +5,5 @@
 
 # XDC: new/top.xdc
 
-# IP: ip/prgrom/prgrom.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==prgrom || ORIG_REF_NAME==prgrom} -quiet] -quiet
-
 # IP: ip/RAM/RAM.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==RAM || ORIG_REF_NAME==RAM} -quiet] -quiet
