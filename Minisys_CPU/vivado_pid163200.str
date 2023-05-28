@@ -1,0 +1,389 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 163200
+License: Customer
+
+Current time: 	Mon May 22 15:17:57 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Gaozr
+User home directory: C:/Users/Gaozr
+User working directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Gaozr/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.log
+Vivado journal file location: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/vivado.jou
+Engine tmp dir: 	D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/.Xil/Vivado-163200-Gao
+
+GUI allocated memory:	194 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 562 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\myCodes\vivado\computer_organization\SUSTC_CS214_MINISYS_CPU\Minisys_CPU\Minisys_CPU.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 41 MB (+40895kb) [00:00:06]
+// [Engine Memory]: 521 MB (+394693kb) [00:00:06]
+// [GUI Memory]: 59 MB (+15806kb) [00:00:06]
+// [GUI Memory]: 62 MB (+62kb) [00:00:07]
+// [Engine Memory]: 556 MB (+9992kb) [00:00:07]
+// Tcl Message: open_project D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: Minisys_CPU; location: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU; part: xc7a100tfgg484-1
+// [GUI Memory]: 72 MB (+8031kb) [00:00:08]
+dismissDialog("Open Project"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 38 MB. Current time: 5/22/23 3:17:58 PM CST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 591 MB (+6585kb) [00:00:12]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// N (cj):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tfgg484-1 
+// [Engine Memory]: 680 MB (+62971kb) [00:00:21]
+// r (cj): Re-customize IP: addNotify
+// [Engine Memory]: 822 MB (+112541kb) [00:00:23]
+dismissDialog("Re-customize IP"); // N (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 822 MB. GUI used memory: 45 MB. Current time: 5/22/23 3:18:13 PM CST
+// Elapsed time: 75 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bb (C, r)
+// [GUI Memory]: 76 MB (+373kb) [00:01:44]
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, "PAResourceEtoH.HACGCTabbedPane_TABBED_PANE", (HResource) null, "Other Options", 2, true, false); // bb (C, r) - Popup Trigger
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bb (C, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cj)
+selectCodeEditor("ifetch.v", 211, 176); // cd (w, cj)
+selectCodeEditor("ifetch.v", 201, 178); // cd (w, cj)
+// [GUI Memory]: 81 MB (+562kb) [00:02:21]
+// Elapsed time: 15 seconds
+selectCodeEditor("ifetch.v", 109, 178); // cd (w, cj)
+// Elapsed time: 16 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aF, cj)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cj)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectCodeEditor("ifetch.v", 712, 294); // cd (w, cj)
+selectCodeEditor("ifetch.v", 60, 287); // cd (w, cj)
+selectCodeEditor("ifetch.v", 59, 280); // cd (w, cj)
+selectCodeEditor("ifetch.v", 59, 280, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 33, 289); // cd (w, cj)
+selectCodeEditor("ifetch.v", 39, 294); // cd (w, cj)
+selectCodeEditor("ifetch.v", 39, 294, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 51, 299); // cd (w, cj)
+selectCodeEditor("ifetch.v", 51, 299, false, false, false, false, true); // cd (w, cj) - Double Click
+// [GUI Memory]: 86 MB (+1158kb) [00:05:20]
+// Elapsed time: 149 seconds
+selectCodeEditor("ifetch.v", 46, 262); // cd (w, cj)
+selectCodeEditor("ifetch.v", 46, 259, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 50, 279); // cd (w, cj)
+selectCodeEditor("ifetch.v", 50, 279, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("ifetch.v", 36, 335); // cd (w, cj)
+// [GUI Memory]: 90 MB (+81kb) [00:09:36]
+// Elapsed time: 503 seconds
+selectCodeEditor("ifetch.v", 319, 322); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("ifetch.v", 33, 310); // cd (w, cj)
+selectCodeEditor("ifetch.v", 41, 309); // cd (w, cj)
+selectCodeEditor("ifetch.v", 41, 309, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 229 seconds
+selectCodeEditor("ifetch.v", 99, 225); // cd (w, cj)
+selectCodeEditor("ifetch.v", 99, 225, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 36 seconds
+selectCodeEditor("ifetch.v", 85, 172); // cd (w, cj)
+selectCodeEditor("ifetch.v", 95, 161); // cd (w, cj)
+selectCodeEditor("ifetch.v", 79, 173); // cd (w, cj)
+selectCodeEditor("ifetch.v", 82, 158); // cd (w, cj)
+selectCodeEditor("ifetch.v", 87, 188); // cd (w, cj)
+selectCodeEditor("ifetch.v", 88, 187, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("ifetch.v", 48, 207); // cd (w, cj)
+selectCodeEditor("ifetch.v", 44, 182); // cd (w, cj)
+selectCodeEditor("ifetch.v", 57, 162); // cd (w, cj)
+selectCodeEditor("ifetch.v", 53, 185); // cd (w, cj)
+selectCodeEditor("ifetch.v", 43, 209); // cd (w, cj)
+selectCodeEditor("ifetch.v", 43, 189); // cd (w, cj)
+selectCodeEditor("ifetch.v", 43, 166); // cd (w, cj)
+selectCodeEditor("ifetch.v", 2, 198); // cd (w, cj)
+selectCodeEditor("ifetch.v", 11, 211); // cd (w, cj)
+selectCodeEditor("ifetch.v", 0, 220); // cd (w, cj)
+selectCodeEditor("ifetch.v", 1, 238); // cd (w, cj)
+// Elapsed time: 34 seconds
+selectCodeEditor("ifetch.v", 118, 159); // cd (w, cj)
+selectCodeEditor("ifetch.v", 118, 159, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 69, 177); // cd (w, cj)
+// Elapsed time: 100 seconds
+selectCodeEditor("ifetch.v", 148, 123); // cd (w, cj)
+selectCodeEditor("ifetch.v", 148, 123, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 118, 100); // cd (w, cj)
+selectCodeEditor("ifetch.v", 118, 99, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 113, 121); // cd (w, cj)
+selectCodeEditor("ifetch.v", 113, 121, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 103, 142); // cd (w, cj)
+selectCodeEditor("ifetch.v", 103, 142, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 91, 186); // cd (w, cj)
+selectCodeEditor("ifetch.v", 91, 186, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 43, 179); // cd (w, cj)
+selectCodeEditor("ifetch.v", 43, 179, false, false, false, false, true); // cd (w, cj) - Double Click
+// [GUI Memory]: 95 MB (+301kb) [00:25:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 836 MB. GUI used memory: 46 MB. Current time: 5/22/23 3:48:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 836 MB. GUI used memory: 44 MB. Current time: 5/22/23 4:18:14 PM CST
+// Elapsed time: 2695 seconds
+selectCodeEditor("ifetch.v", 656, 91); // cd (w, cj)
+selectCodeEditor("ifetch.v", 656, 91); // cd (w, cj)
+// Elapsed time: 33 seconds
+selectCodeEditor("ifetch.v", 321, 370); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("ifetch.v", 116, 103); // cd (w, cj)
+selectCodeEditor("ifetch.v", 85, 215); // cd (w, cj)
+selectCodeEditor("ifetch.v", 85, 215, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 100, 178); // cd (w, cj)
+selectCodeEditor("ifetch.v", 100, 178, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 49 seconds
+selectCodeEditor("ifetch.v", 106, 258); // cd (w, cj)
+selectCodeEditor("ifetch.v", 81, 233); // cd (w, cj)
+selectCodeEditor("ifetch.v", 82, 233, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 90, 208); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 208, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 97, 214); // cd (w, cj)
+selectCodeEditor("ifetch.v", 97, 214, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 61 seconds
+selectCodeEditor("ifetch.v", 111, 220); // cd (w, cj)
+selectCodeEditor("ifetch.v", 94, 160); // cd (w, cj)
+selectCodeEditor("ifetch.v", 94, 160, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 97, 217); // cd (w, cj)
+selectCodeEditor("ifetch.v", 97, 217, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 101 seconds
+selectCodeEditor("ifetch.v", 390, 57); // cd (w, cj)
+selectCodeEditor("ifetch.v", 362, 28); // cd (w, cj)
+selectCodeEditor("ifetch.v", 371, 115); // cd (w, cj)
+selectCodeEditor("ifetch.v", 371, 95); // cd (w, cj)
+selectCodeEditor("ifetch.v", 379, 111); // cd (w, cj)
+selectCodeEditor("ifetch.v", 381, 121); // cd (w, cj)
+selectCodeEditor("ifetch.v", 376, 133); // cd (w, cj)
+selectCodeEditor("ifetch.v", 617, 195); // cd (w, cj)
+selectCodeEditor("ifetch.v", 692, 204); // cd (w, cj)
+selectCodeEditor("ifetch.v", 685, 211); // cd (w, cj)
+selectCodeEditor("ifetch.v", 630, 228); // cd (w, cj)
+selectCodeEditor("ifetch.v", 562, 263); // cd (w, cj)
+selectCodeEditor("ifetch.v", 540, 301); // cd (w, cj)
+selectCodeEditor("ifetch.v", 512, 275); // cd (w, cj)
+selectCodeEditor("ifetch.v", 261, 284); // cd (w, cj)
+selectCodeEditor("ifetch.v", 254, 293); // cd (w, cj)
+selectCodeEditor("ifetch.v", 241, 301); // cd (w, cj)
+selectCodeEditor("ifetch.v", 233, 308); // cd (w, cj)
+selectCodeEditor("ifetch.v", 231, 315); // cd (w, cj)
+selectCodeEditor("ifetch.v", 227, 323); // cd (w, cj)
+selectCodeEditor("ifetch.v", 532, 351); // cd (w, cj)
+selectCodeEditor("ifetch.v", 463, 366); // cd (w, cj)
+// Elapsed time: 114 seconds
+selectCodeEditor("ifetch.v", 86, 385); // cd (w, cj)
+selectCodeEditor("ifetch.v", 93, 390); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 390); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 390); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 390, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 90, 390, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectCodeEditor("ifetch.v", 59, 396); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 388); // cd (w, cj)
+selectCodeEditor("ifetch.v", 90, 388, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 91, 387); // cd (w, cj)
+selectCodeEditor("ifetch.v", 91, 387, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("ifetch.v", 94, 387); // cd (w, cj)
+selectCodeEditor("ifetch.v", 94, 387, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 101 seconds
+selectCodeEditor("ifetch.v", 324, 168); // cd (w, cj)
+selectCodeEditor("ifetch.v", 288, 188); // cd (w, cj)
+selectCodeEditor("ifetch.v", 288, 185); // cd (w, cj)
+selectCodeEditor("ifetch.v", 283, 191); // cd (w, cj)
+selectCodeEditor("ifetch.v", 250, 204); // cd (w, cj)
+selectCodeEditor("ifetch.v", 237, 216); // cd (w, cj)
+selectCodeEditor("ifetch.v", 278, 230); // cd (w, cj)
+selectCodeEditor("ifetch.v", 285, 250); // cd (w, cj)
+selectCodeEditor("ifetch.v", 318, 272); // cd (w, cj)
+selectCodeEditor("ifetch.v", 300, 292); // cd (w, cj)
+selectCodeEditor("ifetch.v", 300, 321); // cd (w, cj)
+selectCodeEditor("ifetch.v", 296, 331); // cd (w, cj)
+selectCodeEditor("ifetch.v", 275, 353); // cd (w, cj)
+selectCodeEditor("ifetch.v", 231, 388); // cd (w, cj)
+selectCodeEditor("ifetch.v", 194, 357); // cd (w, cj)
+selectCodeEditor("ifetch.v", 183, 369); // cd (w, cj)
+// Elapsed time: 291 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cj): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bb (C, r)
+dismissDialog("Re-customize IP"); // r (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 836 MB. GUI used memory: 51 MB. Current time: 5/22/23 4:48:14 PM CST
+// Elapsed time: 786 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ac (ai, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "program_rom"); // X (N, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c (cj)
+// Tcl Message: close [ open D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v 
+// I (cj): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 276 seconds
+selectCodeEditor("ifetch.v", 177, 302); // cd (w, cj)
+selectCodeEditor("ifetch.v", 137, 277); // cd (w, cj)
+selectCodeEditor("ifetch.v", 177, 254); // cd (w, cj)
+selectCodeEditor("ifetch.v", 163, 237); // cd (w, cj)
+// Elapsed time: 63 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, program_rom (program_rom.v)]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("program_rom.v", 140, 440); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("program_rom.v", 59, 487); // cd (w, cj)
+typeControlKey((HResource) null, "program_rom.v", 'v'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ifetch.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "program_rom.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ifetch.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "program_rom.v", 2); // k (j, cj)
+// [GUI Memory]: 101 MB (+1548kb) [01:40:53]
+selectCodeEditor("program_rom.v", 279, 506); // cd (w, cj)
+typeControlKey((HResource) null, "program_rom.v", 'c'); // cd (w, cj)
+selectCodeEditor("program_rom.v", 28, 276); // cd (w, cj)
+typeControlKey((HResource) null, "program_rom.v", 'v'); // cd (w, cj)
+selectCodeEditor("program_rom.v", 66, 295); // cd (w, cj)
+selectCodeEditor("program_rom.v", 61, 317); // cd (w, cj)
+selectCodeEditor("program_rom.v", 59, 295); // cd (w, cj)
+selectCodeEditor("program_rom.v", 304, 275); // cd (w, cj)
+selectCodeEditor("program_rom.v", 366, 278); // cd (w, cj)
+selectCodeEditor("program_rom.v", 424, 279); // cd (w, cj)
+selectCodeEditor("program_rom.v", 485, 274); // cd (w, cj)
+selectCodeEditor("program_rom.v", 546, 273); // cd (w, cj)
+selectCodeEditor("program_rom.v", 22, 294); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ifetch.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "program_rom.v", 2); // k (j, cj)
+selectCodeEditor("program_rom.v", 103, 278); // cd (w, cj)
+selectCodeEditor("program_rom.v", 241, 235); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("program_rom.v", 1, 254); // cd (w, cj)
+selectCodeEditor("program_rom.v", 5, 235); // cd (w, cj)
+selectCodeEditor("program_rom.v", 2, 238); // cd (w, cj)
+selectCodeEditor("program_rom.v", 137, 278); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ifetch.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "program_rom.v", 2); // k (j, cj)
+selectCodeEditor("program_rom.v", 270, 248); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("program_rom.v", 120, 258); // cd (w, cj)
+selectCodeEditor("program_rom.v", 154, 272); // cd (w, cj)
+selectCodeEditor("program_rom.v", 193, 292); // cd (w, cj)
+selectCodeEditor("program_rom.v", 120, 331); // cd (w, cj)
+selectCodeEditor("program_rom.v", 113, 356); // cd (w, cj)
+selectCodeEditor("program_rom.v", 117, 370); // cd (w, cj)
+selectCodeEditor("program_rom.v", 121, 372); // cd (w, cj)
+selectCodeEditor("program_rom.v", 155, 391); // cd (w, cj)
+selectCodeEditor("program_rom.v", 155, 411); // cd (w, cj)
+selectCodeEditor("program_rom.v", 119, 429); // cd (w, cj)
+selectCodeEditor("program_rom.v", 198, 454); // cd (w, cj)
+selectCodeEditor("program_rom.v", 228, 221); // cd (w, cj)
+selectCodeEditor("program_rom.v", 338, 289); // cd (w, cj)
+selectCodeEditor("program_rom.v", 313, 343); // cd (w, cj)
+// Elapsed time: 196 seconds
+selectCodeEditor("program_rom.v", 112, 441); // cd (w, cj)
+typeControlKey((HResource) null, "program_rom.v", 'v'); // cd (w, cj)
+selectCodeEditor("program_rom.v", 63, 349); // cd (w, cj)
+selectCodeEditor("program_rom.v", 23, 352); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ifetch (ifetch.v), instmem : prgrom (prgrom.xci)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cj): Re-customize IP: addNotify
+// Elapsed time: 29 seconds
+dismissDialog("Re-customize IP"); // r (cj)
+selectCodeEditor("program_rom.v", 636, 192); // cd (w, cj)
+selectCodeEditor("program_rom.v", 485, 297); // cd (w, cj)
+selectCodeEditor("program_rom.v", 466, 321); // cd (w, cj)
+selectCodeEditor("program_rom.v", 413, 365); // cd (w, cj)
+selectCodeEditor("program_rom.v", 324, 412); // cd (w, cj)
+selectCodeEditor("program_rom.v", 282, 438); // cd (w, cj)
+selectCodeEditor("program_rom.v", 104, 477); // cd (w, cj)
+selectCodeEditor("program_rom.v", 642, 435); // cd (w, cj)
+selectCodeEditor("program_rom.v", 446, 442); // cd (w, cj)
+selectCodeEditor("program_rom.v", 424, 453); // cd (w, cj)
+selectCodeEditor("program_rom.v", 395, 458); // cd (w, cj)
+selectCodeEditor("program_rom.v", 378, 471); // cd (w, cj)
+selectCodeEditor("program_rom.v", 356, 487); // cd (w, cj)
+selectCodeEditor("program_rom.v", 22, 356); // cd (w, cj)
+selectCodeEditor("program_rom.v", 23, 374); // cd (w, cj)
+selectCodeEditor("program_rom.v", 108, 474); // cd (w, cj)
+selectCodeEditor("program_rom.v", 60, 462); // cd (w, cj)
