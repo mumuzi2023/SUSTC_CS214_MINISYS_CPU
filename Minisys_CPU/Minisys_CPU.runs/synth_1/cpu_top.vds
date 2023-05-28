@@ -2,67 +2,70 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun May 28 01:18:13 2023
-# Process ID: 7108
-# Current directory: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1
+# Start of session at: Sun May 28 09:19:07 2023
+# Process ID: 19152
+# Current directory: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1
 # Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
-# Log file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.vds
-# Journal file: D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1\vivado.jou
+# Log file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.vds
+# Journal file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source cpu_top.tcl -notrace
 Command: synth_design -top cpu_top -part xc7a100tfgg484-1
 Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'cpuclk' is locked:
+* IP file 'd:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/cpuclk/cpuclk.xml' for IP 'cpuclk' contains stale content.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 768 
+INFO: Helper process launched with PID 8152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 343.609 ; gain = 102.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 343.809 ; gain = 101.777
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'cpu_top' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-638] synthesizing module 'controller' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/controller.v:22]
-INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/controller.v:22]
-INFO: [Synth 8-638] synthesizing module 'ifetch' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ifetch.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ifetch' (3#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ifetch.v:23]
-INFO: [Synth 8-638] synthesizing module 'decoder' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/decoder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (4#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/decoder.v:23]
-INFO: [Synth 8-638] synthesizing module 'execute' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:22]
-INFO: [Synth 8-226] default block is never used [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:97]
-INFO: [Synth 8-256] done synthesizing module 'execute' (5#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:22]
-INFO: [Synth 8-638] synthesizing module 'memorio' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/memorio.v:23]
-INFO: [Synth 8-256] done synthesizing module 'memorio' (6#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/memorio.v:23]
-INFO: [Synth 8-638] synthesizing module 'ioreader' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ioreader' (7#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:23]
-INFO: [Synth 8-638] synthesizing module 'clk_1k' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clk_1k' (8#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
-INFO: [Synth 8-638] synthesizing module 'keypad_n' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
-INFO: [Synth 8-256] done synthesizing module 'keypad_n' (9#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
-INFO: [Synth 8-638] synthesizing module 'pad_decode' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
-INFO: [Synth 8-256] done synthesizing module 'pad_decode' (10#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
-WARNING: [Synth 8-350] instance 'pad_decode1' of module 'pad_decode' requires 13 connections, but only 9 given [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:211]
-INFO: [Synth 8-638] synthesizing module 'sig_led_num_4' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led_num_4.v:23]
-INFO: [Synth 8-638] synthesizing module 'sig_led' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
-INFO: [Synth 8-638] synthesizing module 'num_gif' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
-INFO: [Synth 8-256] done synthesizing module 'num_gif' (11#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
-INFO: [Synth 8-256] done synthesizing module 'sig_led' (12#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
-INFO: [Synth 8-256] done synthesizing module 'sig_led_num_4' (13#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led_num_4.v:23]
-INFO: [Synth 8-638] synthesizing module 'led_light' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/led_light.v:22]
-INFO: [Synth 8-256] done synthesizing module 'led_light' (14#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/led_light.v:22]
-INFO: [Synth 8-638] synthesizing module 'switch' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
-INFO: [Synth 8-256] done synthesizing module 'switch' (15#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
-INFO: [Synth 8-638] synthesizing module 'uart_bmpg_0' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/uart_bmpg_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'uart_bmpg_0' (16#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/uart_bmpg_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'data_memory_uart' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
-INFO: [Synth 8-638] synthesizing module 'RAM' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/RAM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'RAM' (17#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/RAM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'data_memory_uart' (18#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
-INFO: [Synth 8-638] synthesizing module 'program_rom' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
-INFO: [Synth 8-638] synthesizing module 'prgrom' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/prgrom_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'prgrom' (19#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/realtime/prgrom_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'program_rom' (20#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
-INFO: [Synth 8-256] done synthesizing module 'cpu_top' (21#1) [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'cpu_top' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/controller.v:22]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/controller.v:22]
+INFO: [Synth 8-638] synthesizing module 'ifetch' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ifetch.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ifetch' (3#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ifetch.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (4#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'execute' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:22]
+INFO: [Synth 8-226] default block is never used [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:97]
+INFO: [Synth 8-256] done synthesizing module 'execute' (5#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:22]
+INFO: [Synth 8-638] synthesizing module 'memorio' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/memorio.v:23]
+INFO: [Synth 8-256] done synthesizing module 'memorio' (6#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/memorio.v:23]
+INFO: [Synth 8-638] synthesizing module 'ioreader' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ioreader' (7#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_1k' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_1k' (8#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
+INFO: [Synth 8-638] synthesizing module 'keypad_n' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
+INFO: [Synth 8-256] done synthesizing module 'keypad_n' (9#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
+INFO: [Synth 8-638] synthesizing module 'pad_decode' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pad_decode' (10#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
+WARNING: [Synth 8-350] instance 'pad_decode1' of module 'pad_decode' requires 13 connections, but only 9 given [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:211]
+INFO: [Synth 8-638] synthesizing module 'sig_led_num_4' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led_num_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'sig_led' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
+INFO: [Synth 8-638] synthesizing module 'num_gif' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
+INFO: [Synth 8-256] done synthesizing module 'num_gif' (11#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sig_led' (12#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sig_led_num_4' (13#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led_num_4.v:23]
+INFO: [Synth 8-638] synthesizing module 'led_light' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/led_light.v:22]
+INFO: [Synth 8-256] done synthesizing module 'led_light' (14#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/led_light.v:22]
+INFO: [Synth 8-638] synthesizing module 'switch' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
+INFO: [Synth 8-256] done synthesizing module 'switch' (15#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
+INFO: [Synth 8-638] synthesizing module 'uart_bmpg_0' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_bmpg_0' (16#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'data_memory_uart' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (17#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_memory_uart' (18#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
+INFO: [Synth 8-638] synthesizing module 'program_rom' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (19#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'program_rom' (20#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
+INFO: [Synth 8-256] done synthesizing module 'cpu_top' (21#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
 WARNING: [Synth 8-3331] design memorio has unconnected port memread
 WARNING: [Synth 8-3331] design memorio has unconnected port memwrite
 WARNING: [Synth 8-3331] design execute has unconnected port Opcode[5]
@@ -73,7 +76,7 @@ WARNING: [Synth 8-3331] design execute has unconnected port Function_opcode[4]
 WARNING: [Synth 8-3331] design execute has unconnected port PC_plus_4[1]
 WARNING: [Synth 8-3331] design execute has unconnected port PC_plus_4[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 396.559 ; gain = 155.645
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 396.199 ; gain = 154.168
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -83,73 +86,75 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 396.559 ; gain = 155.645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 396.199 ; gain = 154.168
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp4/RAM_in_context.xdc] for cell 'prgrom/instmem'
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp4/RAM_in_context.xdc] for cell 'prgrom/instmem'
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp5/RAM_in_context.xdc] for cell 'mem/ram'
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp5/RAM_in_context.xdc] for cell 'mem/ram'
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp6/uart_bmpg_0_in_context.xdc] for cell 'uart'
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp6/uart_bmpg_0_in_context.xdc] for cell 'uart'
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp7/cpuclk_in_context.xdc] for cell 'cpuclk'
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp7/cpuclk_in_context.xdc] for cell 'cpuclk'
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
-WARNING: [Vivado 12-584] No ports matched 'led[23]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:80]
-WARNING: [Vivado 12-584] No ports matched 'led[22]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:81]
-WARNING: [Vivado 12-584] No ports matched 'led[21]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:82]
-WARNING: [Vivado 12-584] No ports matched 'led[20]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:83]
-WARNING: [Vivado 12-584] No ports matched 'led[19]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:84]
-WARNING: [Vivado 12-584] No ports matched 'led[18]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:85]
-WARNING: [Vivado 12-584] No ports matched 'led[17]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:86]
-WARNING: [Vivado 12-584] No ports matched 'led[16]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:87]
-WARNING: [Vivado 12-584] No ports matched 'led[23]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:96]
-WARNING: [Vivado 12-584] No ports matched 'led[16]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:106]
-WARNING: [Vivado 12-584] No ports matched 'led[17]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:107]
-WARNING: [Vivado 12-584] No ports matched 'led[22]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:108]
-WARNING: [Vivado 12-584] No ports matched 'led[18]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:109]
-WARNING: [Vivado 12-584] No ports matched 'led[19]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:110]
-WARNING: [Vivado 12-584] No ports matched 'led[20]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:111]
-WARNING: [Vivado 12-584] No ports matched 'led[21]'. [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:112]
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/cpu_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'prgrom/instmem'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'prgrom/instmem'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp5/RAM_in_context.xdc] for cell 'mem/ram'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp5/RAM_in_context.xdc] for cell 'mem/ram'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp6/uart_bmpg_0_in_context.xdc] for cell 'uart'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp6/uart_bmpg_0_in_context.xdc] for cell 'uart'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp7/cpuclk_in_context.xdc] for cell 'cpuclk'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp7/cpuclk_in_context.xdc] for cell 'cpuclk'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[23]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'led[22]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[21]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[20]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'led[19]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[18]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[17]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'led[16]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[23]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[16]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[17]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'led[22]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[18]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[19]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'led[20]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[21]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:112]
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/cpu_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc]
-Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 759.457 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 759.797 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 759.457 ; gain = 518.543
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 759.797 ; gain = 517.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 759.457 ; gain = 518.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 759.797 ; gain = 517.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp7/cpuclk_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-7108-Gao/dcp7/cpuclk_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp7/cpuclk_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-19152-DESKTOP-9VRBO84/dcp7/cpuclk_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for cpuclk. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mem/ram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for prgrom/instmem. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for uart. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 759.457 ; gain = 518.543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 759.797 ; gain = 517.766
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Jmp" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Jal" won't be mapped to RAM because it is too sparse
@@ -191,16 +196,16 @@ INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:93]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/execute.v:93]
 INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element clk_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
+WARNING: [Synth 8-6014] Unused sequential element clk_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
 INFO: [Synth 8-802] inferred FSM for state register 'line_reg' in module 'keypad_n'
 INFO: [Synth 8-5544] ROM "now" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element clk_10_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:34]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:48]
+WARNING: [Synth 8-6014] Unused sequential element clk_10_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:34]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:48]
 INFO: [Synth 8-5544] ROM "o1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:37]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/ioreader.v:37]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -212,7 +217,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [D:/myCode
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'line_reg' using encoding 'sequential' in module 'keypad_n'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 759.457 ; gain = 518.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 759.797 ; gain = 517.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -367,26 +372,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'pad_decode1/o1_reg[3:0]' into 'pad_decode1/o1_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-INFO: [Synth 8-4471] merging register 'pad_decode1/o1_reg[3:0]' into 'pad_decode1/o1_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-INFO: [Synth 8-4471] merging register 'pad_decode1/o2_reg[3:0]' into 'pad_decode1/o2_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-INFO: [Synth 8-4471] merging register 'pad_decode1/o2_reg[3:0]' into 'pad_decode1/o2_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-INFO: [Synth 8-4471] merging register 'pad_decode1/o3_reg[3:0]' into 'pad_decode1/o3_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o2_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o3_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o4_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o5_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o6_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o7_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o8_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o1_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o1_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o2_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-INFO: [Synth 8-4471] merging register 'pad_decode1/o3_reg[3:0]' into 'pad_decode1/o3_reg[3:0]' [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o3_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
-WARNING: [Synth 8-6014] Unused sequential element clk_1k1/clk_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
-WARNING: [Synth 8-6014] Unused sequential element keypad1/clk_10_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:34]
-WARNING: [Synth 8-6014] Unused sequential element pad_decode1/cnt_reg was removed.  [D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o1_reg[3:0]' into 'pad_decode1/o1_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o1_reg[3:0]' into 'pad_decode1/o1_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o2_reg[3:0]' into 'pad_decode1/o2_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o2_reg[3:0]' into 'pad_decode1/o2_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o3_reg[3:0]' into 'pad_decode1/o3_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o2_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o3_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o4_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o5_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o6_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o7_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o8_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o1_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o1_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o2_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+INFO: [Synth 8-4471] merging register 'pad_decode1/o3_reg[3:0]' into 'pad_decode1/o3_reg[3:0]' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/o3_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
+WARNING: [Synth 8-6014] Unused sequential element clk_1k1/clk_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
+WARNING: [Synth 8-6014] Unused sequential element keypad1/clk_10_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:34]
+WARNING: [Synth 8-6014] Unused sequential element pad_decode1/cnt_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:47]
 WARNING: [Synth 8-3331] design execute has unconnected port Opcode[5]
 WARNING: [Synth 8-3331] design execute has unconnected port Opcode[4]
 WARNING: [Synth 8-3331] design execute has unconnected port Opcode[3]
@@ -401,7 +406,7 @@ WARNING: [Synth 8-3332] Sequential element (sig_led1/v_reg[7]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[9]) is unused and will be removed from module cpu_top.
 WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[8]) is unused and will be removed from module cpu_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 759.457 ; gain = 518.543
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 759.797 ; gain = 517.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,13 +421,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/single_cycle_cpu_c
 INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/uart_clk' to pin 'cpuclk/bbstub_uart_clk/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 806.578 ; gain = 565.664
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 804.574 ; gain = 562.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:45 . Memory (MB): peak = 961.738 ; gain = 720.824
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:41 . Memory (MB): peak = 961.598 ; gain = 719.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -434,7 +439,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:49 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -458,7 +463,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:49 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -471,7 +476,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:49 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -483,25 +488,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -562,11 +567,11 @@ Report Instance Areas:
 |13    |  switch      |switch           |    16|
 +------+--------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 991.625 ; gain = 750.711
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:01:47 . Memory (MB): peak = 991.625 ; gain = 387.812
-Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:01:54 . Memory (MB): peak = 991.625 ; gain = 750.711
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:44 . Memory (MB): peak = 990.660 ; gain = 385.031
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:50 . Memory (MB): peak = 990.660 ; gain = 748.629
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 482 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -577,10 +582,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+117 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 991.625 ; gain = 761.258
-INFO: [Common 17-1381] The checkpoint 'D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:54 . Memory (MB): peak = 990.660 ; gain = 760.164
+INFO: [Common 17-1381] The checkpoint 'D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 991.625 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun May 28 01:20:15 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 990.660 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 28 09:21:04 2023...
