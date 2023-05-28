@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 // Date        : Sun May 28 01:18:01 2023
 // Host        : Gao running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/cpuclk/cpuclk_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ cpuclk_sim_netlist.v
 // Design      : cpuclk
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 
 (* NotValidForBitStream *)
-module cpuclk
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (single_cycle_cpu_clk,
     uart_clk,
     clk_in1);
@@ -25,14 +25,13 @@ module cpuclk
   wire single_cycle_cpu_clk;
   wire uart_clk;
 
-  cpuclk_cpuclk_clk_wiz inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cpuclk_clk_wiz inst
        (.clk_in1(clk_in1),
         .single_cycle_cpu_clk(single_cycle_cpu_clk),
         .uart_clk(uart_clk));
 endmodule
 
-(* ORIG_REF_NAME = "cpuclk_clk_wiz" *) 
-module cpuclk_cpuclk_clk_wiz
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_cpuclk_clk_wiz
    (single_cycle_cpu_clk,
     uart_clk,
     clk_in1);
