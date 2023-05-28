@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun May 28 15:38:00 2023
+| Date             : Sun May 28 18:13:53 2023
 | Host             : DESKTOP-9VRBO84 running 64-bit major release  (build 9200)
 | Command          : report_power -file cpu_top_power_routed.rpt -pb cpu_top_power_summary_routed.pb -rpx cpu_top_power_routed.rpx
 | Design           : cpu_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.232        |
+| Total On-Chip Power (W)  | 0.233        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.133        |
+| Dynamic (W)              | 0.134        |
 | Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 84.4         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.001 |        6 |       --- |             --- |
-| Slice Logic             |     0.004 |     5099 |       --- |             --- |
-|   LUT as Logic          |     0.004 |     2601 |     63400 |            4.10 |
+| Slice Logic             |     0.004 |     5115 |       --- |             --- |
+|   LUT as Logic          |     0.004 |     2637 |     63400 |            4.16 |
 |   CARRY4                |    <0.001 |       97 |     15850 |            0.61 |
-|   F7/F8 Muxes           |    <0.001 |      366 |     63400 |            0.58 |
-|   Register              |    <0.001 |     1581 |    126800 |            1.25 |
+|   F7/F8 Muxes           |    <0.001 |      332 |     63400 |            0.52 |
+|   Register              |    <0.001 |     1613 |    126800 |            1.27 |
 |   BUFG                  |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Shift Register |    <0.001 |       10 |     19000 |            0.05 |
 |   Others                |     0.000 |      136 |       --- |             --- |
-| Signals                 |     0.005 |     4375 |       --- |             --- |
+| Signals                 |     0.005 |     4339 |       --- |             --- |
 | Block RAM               |     0.002 |       29 |       135 |           21.48 |
 | MMCM                    |     0.106 |        1 |         6 |           16.67 |
 | I/O                     |     0.015 |       65 |       285 |           22.81 |
 | Static Power            |     0.099 |          |           |                 |
-| Total                   |     0.232 |          |           |                 |
+| Total                   |     0.233 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.029 |       0.013 |      0.016 |
+| Vccint    |       1.000 |     0.029 |       0.014 |      0.016 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -148,7 +148,7 @@ Table of Contents
 +---------------------------------------------------------------------------------+-----------+
 | Name                                                                            | Power (W) |
 +---------------------------------------------------------------------------------+-----------+
-| cpu_top                                                                         |     0.133 |
+| cpu_top                                                                         |     0.134 |
 |   bd1                                                                           |    <0.001 |
 |   clk_1k1                                                                       |    <0.001 |
 |   cpuclk                                                                        |     0.106 |
@@ -198,7 +198,7 @@ Table of Contents
 |               ramloop[9].ram.r                                                  |    <0.001 |
 |                 prim_init.ram                                                   |    <0.001 |
 |   pad_decode1                                                                   |    <0.001 |
-|   prgrom                                                                        |     0.004 |
+|   prgrom                                                                        |     0.005 |
 |     instmem                                                                     |     0.002 |
 |       U0                                                                        |     0.002 |
 |         inst_blk_mem_gen                                                        |     0.002 |

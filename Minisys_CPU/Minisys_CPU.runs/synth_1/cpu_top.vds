@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun May 28 15:33:39 2023
-# Process ID: 22112
+# Start of session at: Sun May 28 18:08:05 2023
+# Process ID: 15832
 # Current directory: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1
 # Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
 # Log file: D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.vds
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13492 
+INFO: Helper process launched with PID 5108 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 344.070 ; gain = 102.680
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 343.469 ; gain = 102.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'cpu_top' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/cpuclk_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'clk_1k' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
 INFO: [Synth 8-256] done synthesizing module 'clk_1k' (2#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:23]
 INFO: [Synth 8-638] synthesizing module 'controller' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/controller.v:22]
@@ -43,7 +43,7 @@ INFO: [Synth 8-638] synthesizing module 'keypad_n' [D:/computer_organization/SUS
 INFO: [Synth 8-256] done synthesizing module 'keypad_n' (10#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/keypad_n.v:23]
 INFO: [Synth 8-638] synthesizing module 'pad_decode' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
 INFO: [Synth 8-256] done synthesizing module 'pad_decode' (11#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/pad_decode.v:23]
-WARNING: [Synth 8-350] instance 'pad_decode1' of module 'pad_decode' requires 13 connections, but only 9 given [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:244]
+WARNING: [Synth 8-350] instance 'pad_decode1' of module 'pad_decode' requires 13 connections, but only 9 given [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:257]
 INFO: [Synth 8-638] synthesizing module 'sig_led_num_4' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led_num_4.v:23]
 INFO: [Synth 8-638] synthesizing module 'sig_led' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/sig_led.v:23]
 INFO: [Synth 8-638] synthesizing module 'num_gif' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/num_gif.v:23]
@@ -56,15 +56,15 @@ INFO: [Synth 8-638] synthesizing module 'led_testcase' [D:/computer_organization
 INFO: [Synth 8-256] done synthesizing module 'led_testcase' (16#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/led_testcase.v:23]
 INFO: [Synth 8-638] synthesizing module 'switch' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
 INFO: [Synth 8-256] done synthesizing module 'switch' (17#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/switch.v:22]
-INFO: [Synth 8-638] synthesizing module 'uart_bmpg_0' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'uart_bmpg_0' (18#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'uart_bmpg_0' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_bmpg_0' (18#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/uart_bmpg_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'data_memory_uart' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
-INFO: [Synth 8-638] synthesizing module 'RAM' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'RAM' (19#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (19#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/RAM_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'data_memory_uart' (20#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/data_memory_uart.v:22]
 INFO: [Synth 8-638] synthesizing module 'program_rom' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
-INFO: [Synth 8-638] synthesizing module 'prgrom' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'prgrom' (21#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (21#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/realtime/prgrom_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'program_rom' (22#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/program_rom.v:23]
 INFO: [Synth 8-256] done synthesizing module 'cpu_top' (23#1) [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/cpu_top.v:23]
 WARNING: [Synth 8-3331] design memorio has unconnected port memread
@@ -77,7 +77,7 @@ WARNING: [Synth 8-3331] design execute has unconnected port Function_opcode[4]
 WARNING: [Synth 8-3331] design execute has unconnected port PC_plus_4[1]
 WARNING: [Synth 8-3331] design execute has unconnected port PC_plus_4[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 396.418 ; gain = 155.027
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 396.273 ; gain = 155.152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -87,21 +87,21 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 396.418 ; gain = 155.027
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 396.273 ; gain = 155.152
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'mem/ram'
-Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'mem/ram'
-Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp5/uart_bmpg_0_in_context.xdc] for cell 'uart'
-Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp5/uart_bmpg_0_in_context.xdc] for cell 'uart'
-Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc] for cell 'cpuclk'
-Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc] for cell 'cpuclk'
-Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp7/prgrom_in_context.xdc] for cell 'prgrom/instmem'
-Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp7/prgrom_in_context.xdc] for cell 'prgrom/instmem'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'mem/ram'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp4/RAM_in_context.xdc] for cell 'mem/ram'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp5/uart_bmpg_0_in_context.xdc] for cell 'uart'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp5/uart_bmpg_0_in_context.xdc] for cell 'uart'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc] for cell 'cpuclk'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc] for cell 'cpuclk'
+Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp7/prgrom_in_context.xdc] for cell 'prgrom/instmem'
+Finished Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp7/prgrom_in_context.xdc] for cell 'prgrom/instmem'
 Parsing XDC File [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc]
 WARNING: [Vivado 12-584] No ports matched 'led[23]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:80]
 WARNING: [Vivado 12-584] No ports matched 'led[22]'. [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc:81]
@@ -134,28 +134,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 761.512 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 761.586 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 761.512 ; gain = 520.121
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 761.586 ; gain = 520.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 761.512 ; gain = 520.121
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 761.586 ; gain = 520.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-22112-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ori_clk. (constraint file  D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/.Xil/Vivado-15832-DESKTOP-9VRBO84/dcp6/cpuclk_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for cpuclk. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mem/ram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for prgrom/instmem. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for uart. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 761.512 ; gain = 520.121
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 761.586 ; gain = 520.465
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element clk_reg was removed.  [D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/new/clk_1k.v:29]
 INFO: [Synth 8-5546] ROM "Jmp" won't be mapped to RAM because it is too sparse
@@ -221,7 +221,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [D:/comput
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'line_reg' using encoding 'sequential' in module 'keypad_n'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 761.512 ; gain = 520.121
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 761.586 ; gain = 520.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -237,19 +237,19 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 2     
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 5     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 32    
+	               32 Bit    Registers := 33    
 	               10 Bit    Registers := 4     
 	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 12    
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 14    
+	   4 Input     32 Bit        Muxes := 1     
 	   8 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     14 Bit        Muxes := 2     
@@ -263,7 +263,8 @@ Detailed RTL Component Info :
 	   8 Input      3 Bit        Muxes := 2     
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 60    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 61    
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -275,10 +276,13 @@ Hierarchical RTL Component report
 Module cpu_top 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module clk_1k 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -293,14 +297,17 @@ Module ifetch
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
 Module decoder 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 32    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 4     
 	   2 Input      5 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 32    
 Module execute 
@@ -436,7 +443,7 @@ WARNING: [Synth 8-3332] Sequential element (value_reg[7]) is unused and will be 
 WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[9]) is unused and will be removed from module cpu_top.
 WARNING: [Synth 8-3332] Sequential element (keypad1/clk_10_reg[8]) is unused and will be removed from module cpu_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 761.512 ; gain = 520.121
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:41 . Memory (MB): peak = 761.586 ; gain = 520.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -451,13 +458,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/single_cycle_cpu_c
 INFO: [Synth 8-5578] Moved timing constraint from pin 'cpuclk/uart_clk' to pin 'cpuclk/bbstub_uart_clk/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:15 . Memory (MB): peak = 805.613 ; gain = 564.223
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:52 . Memory (MB): peak = 807.465 ; gain = 566.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:54 . Memory (MB): peak = 961.977 ; gain = 720.586
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:02:30 . Memory (MB): peak = 964.203 ; gain = 723.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -470,7 +477,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (bd1/cnt_reg[9]) is unused and will be removed from module cpu_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:02:03 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:02:38 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -494,7 +501,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:02:04 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -507,7 +514,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:02:04 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -519,25 +526,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:02:04 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:02:04 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:02:04 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -563,17 +570,17 @@ Report Cell Usage:
 |4     |uart_bmpg_0 |     1|
 |5     |BUFG        |     1|
 |6     |CARRY4      |    77|
-|7     |LUT1        |    23|
-|8     |LUT2        |   173|
-|9     |LUT3        |   242|
-|10    |LUT4        |   223|
-|11    |LUT5        |   399|
-|12    |LUT6        |  1434|
-|13    |MUXF7       |   258|
-|14    |MUXF8       |   108|
+|7     |LUT1        |    22|
+|8     |LUT2        |   169|
+|9     |LUT3        |   259|
+|10    |LUT4        |   253|
+|11    |LUT5        |   348|
+|12    |LUT6        |  1461|
+|13    |MUXF7       |   268|
+|14    |MUXF8       |    64|
 |15    |FDCE        |    51|
 |16    |FDPE        |     6|
-|17    |FDRE        |  1139|
+|17    |FDRE        |  1171|
 |18    |FDSE        |     4|
 |19    |LDC         |    16|
 |20    |IBUF        |    24|
@@ -584,30 +591,30 @@ Report Instance Areas:
 +------+--------------+-----------------+------+
 |      |Instance      |Module           |Cells |
 +------+--------------+-----------------+------+
-|1     |top           |                 |  4335|
-|2     |  bd1         |button_decode    |    29|
+|1     |top           |                 |  4351|
+|2     |  bd1         |button_decode    |    28|
 |3     |  clk_1k1     |clk_1k           |    21|
-|4     |  decoder     |decoder          |  2685|
-|5     |  ifetch      |ifetch           |    96|
+|4     |  decoder     |decoder          |  2554|
+|5     |  ifetch      |ifetch           |   124|
 |6     |  ioreader    |ioreader         |    16|
-|7     |  keypad1     |keypad_n         |    62|
+|7     |  keypad1     |keypad_n         |    61|
 |8     |  led_light   |led_light        |    16|
 |9     |  led_t       |led_testcase     |     3|
-|10    |  mem         |data_memory_uart |    34|
+|10    |  mem         |data_memory_uart |    33|
 |11    |  pad_decode1 |pad_decode       |   121|
-|12    |  prgrom      |program_rom      |  1001|
+|12    |  prgrom      |program_rom      |  1123|
 |13    |  sig_led     |sig_led_num_4    |    89|
 |14    |    sig_led1  |sig_led          |    82|
 |15    |  switch      |switch           |    16|
 +------+--------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 994.082 ; gain = 752.691
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:59 . Memory (MB): peak = 994.082 ; gain = 387.598
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:02:05 . Memory (MB): peak = 994.082 ; gain = 752.691
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:02:33 . Memory (MB): peak = 1009.680 ; gain = 403.246
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:02:39 . Memory (MB): peak = 1009.680 ; gain = 768.559
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 483 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 449 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -618,8 +625,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 124 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:02:09 . Memory (MB): peak = 994.082 ; gain = 763.281
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:02:44 . Memory (MB): peak = 1009.680 ; gain = 779.098
 INFO: [Common 17-1381] The checkpoint 'D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 994.082 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun May 28 15:35:52 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1009.680 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 28 18:10:52 2023...

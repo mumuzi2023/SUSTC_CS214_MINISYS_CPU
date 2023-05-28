@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module decoder(instruction,clock,reset,RegWrite,RegDST,MemorIOtoReg,jal,link_addr,alu_result,memorio_data,read_data_1,read_data_2,immediate_ext);
+module decoder(instruction,clock,reset,jr,RegWrite,RegDST,MemorIOtoReg,jal,link_addr,alu_result,memorio_data,read_data_1,read_data_2,immediate_ext);
 
 input[31:0] instruction;
 input clock;
@@ -32,6 +32,7 @@ input jal;//jal need to write address to $ra
 input[31:0] link_addr; // from ifetch
 input[31:0] alu_result;//write data
 input[31:0] memorio_data;//ReadData from memory or io
+input jr;
 output[31:0] read_data_1;
 output[31:0] read_data_2;
 output[31:0] immediate_ext;
@@ -47,17 +48,16 @@ wire[15:0] immediate= instruction[15:0];
 wire[31:0] immediate_ext = (op == 6'b001100||op ==  6'b001101)?{{16{1'b0}},immediate}:{{16{instruction[15]}},immediate};
 
 //the index of register should write
-wire[4:0] write_idx = jal?5'b11111:(RegDST)?rd:rt;
+wire[4:0] write_idx = (6'b000011 == op & jal == 1'b1)?5'b11111:(RegDST)?rd:rt;
 
 //register file
 reg [31:0] register[0:31];
 
 integer i;
 //read_data_1 is value of source register
-assign read_data_1 = register[rs];
+assign read_data_1 = (jr == 1'b1)?register[5'b11111]:register[rs];
 //read_data_2 is value of rt register(source register 2).
 assign read_data_2 = register[rt];
-
 
 // The reading should be done at any time while writing only happens on the posedge of the clock
 // the next always block control the write 
@@ -72,7 +72,7 @@ always @(posedge clock)begin
          if((RegWrite || jal) && write_idx != 0) begin
                //if jal, record the link_addr(i.e. PC + 4) to $ra.
                //else check if it is lw(MemtoReg), if yes memory_data, no write alu_result into it.
-               register[write_idx] <= (jal? link_addr:(MemorIOtoReg? memorio_data :alu_result));
+               register[write_idx] <= ((6'b000011 == op && 1'b1 == jal)? link_addr:(MemorIOtoReg? memorio_data :alu_result));
          end
     end
 end

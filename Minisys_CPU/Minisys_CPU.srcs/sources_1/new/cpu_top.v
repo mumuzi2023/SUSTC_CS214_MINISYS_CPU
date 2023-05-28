@@ -101,7 +101,7 @@ wire[31:0] cur_pc;
 wire[31:0] addr_result;
 wire zero;
 wire[31:0] read_data_1;
-wire[31:0]  read_data_2;
+wire[31:0] read_data_2;
 ifetch ifetch(
 .Instruction_o(ins_o),
 .branch_base_addr(branch_base_addr), 
@@ -133,6 +133,7 @@ decoder decoder(
 .RegDST(regdst),// 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
 .MemorIOtoReg(memoriotoreg),
 .jal(jal),//jal need to write address to $ra
+.jr(jr),
 .link_addr(link_addr), // from ifetch
 .alu_result(alu_result),//write data
 .memorio_data(readdata),//ReadData from memory
@@ -182,16 +183,28 @@ button_decode bd1(
 .out(iodone_d)
 );
 
-reg [2:0] clk;
+reg [1:0] clk;
+reg clk_3;
 always@(posedge cpu_clk)
 begin
-    clk<=clk+1;
+    if(reset)begin
+        clk = 2'b00;
+        clk_3 = 0;
+    end
+    if(clk == 2'b11)begin
+        clk = 2'b00;
+        clk_3 = !clk_3; 
+    end
+    else begin
+        clk = clk + 2'b01;
+    end
 end
-wire clk_3 = clk[2];
+
+
 
 always@(posedge clk_3)begin
     if(pre_iodone==1'b1 && iodone_d == 1'b0)begin
-        iodone_atwitter = 1'b1;
+        iodone_atwitter= 1'b1;
         pre_iodone = iodone_d;
     end
     else begin
