@@ -25,7 +25,6 @@ module uart_tx(
 	input	[7:0] 	uart_data,	//发送的8位置数据
 	output reg 		uart_txd,	//串口发送数据线
 	input uart_ctrl
-
 );
 reg sys_rst_n=1,uart_tx_en=0;
 parameter 	SYS_CLK_FRE=100_000_000;    //50M系统时钟 

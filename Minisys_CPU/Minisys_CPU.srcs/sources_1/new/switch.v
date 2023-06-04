@@ -22,9 +22,11 @@
 module switch(clk, rst,switchctrl,switch_data, switch_i);
     input clk;
     input rst;
-    input switchctrl;// ioread && inmode = 0
+    input switchctrl;// from memorio
     input [15:0] switch_i;	//input from switch
-    output reg[15:0] switch_data;
+    output reg[15:0] switch_data; // to ioreader
+    
+    
     always@(negedge clk or posedge rst) begin
         if(rst) begin
             switch_data <= 16'h0000;

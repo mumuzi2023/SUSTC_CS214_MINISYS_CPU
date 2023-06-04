@@ -22,10 +22,10 @@
 //* is reset a
 module pad_decode(clk,in,padctrl,o1,o2,o3,o4,o5,o6,o7,o8,rst,o_4);
 input clk;//      时钟，输入，输出（单个数字），重置，输出【o1,o2,o3,o4]组合
-input rst;
-input padctrl;
+input rst;// from cpu top
+input padctrl;// from memorio
 input[3:0]in;
-output reg[15:0]o_4;
+output reg[15:0]o_4; //pad_data
 output reg[3:0]o1,o2,o3,o4,o5,o6,o7,o8;
 reg [9:0] cnt=0;
 reg [3:0] last;

@@ -21,13 +21,14 @@
 
 
 module sig_led_num_4(clk,cpuclk,rst,n,sigctrl,high,value,v);
-input cpuclk;
-input clk;
+input cpuclk;// cpu clock
+input clk; //sig led control clock
 input rst;
-input sigctrl;
-input[15:0] n;
+input sigctrl;//from memorio
+input[15:0] n;//output data
 output [7:0] high;
 output [7:0] value,v;
+
 wire[3:0] n1,n2,n3,n4;
 reg [15:0]nn;
 assign v=nn;

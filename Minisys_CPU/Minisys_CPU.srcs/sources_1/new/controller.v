@@ -23,8 +23,8 @@ module controller(Op,Func,Alu_resultHigh,Jr,Jmp,Jal,Branch,nBranch,RegDST,MemorI
 input[5:0] Op; // instruction[31:26], opcode
 input[5:0] Func; // instructions[5:0], funct
 input[21:0] Alu_resultHigh;//Alu_Result[31..10]
-output Jr ; // 1 indicates the instruction is "jr", otherwise it's not "jr" output Jmp; 
-output Jmp;
+output Jr ; // 1 indicates the instruction is "jr", otherwise it's not "jr"; 
+output Jmp; // 1 indicates the instruction is "j" ,otherwise it is not
 output Jal; // 1 indicate the instruction is "jal", otherwise it's not
 output Branch; // 1 indicate the instruction is "beq" , otherwise it's not
 output nBranch; // 1 indicate the instruction is "bne", otherwise it's not
@@ -32,13 +32,13 @@ output RegDST; // 1 indicate destination register is "rd"(R),otherwise it's "rt"
 output MemorIOtoReg; // 1 indicate read data from memory and write it into register
 output RegWrite; // 1 indicate write register(R,I(lw)), otherwise it's not
 output MemWrite; // 1 indicate write data memory, otherwise it's not
-output MemRead;
-output IOWrite;
-output IORead;
+output MemRead; // 1 indicate read data memory, otherwise it's not
+output IOWrite; // 1 indicate IOwrite, otherwise it's not
+output IORead; // 1 indicate IOread, otherwise it's not
 output ALUSrc; // 1 indicate the 2nd data is immidiate (except "beq","bne")
 output Sftmd; // 1 indicate the instruction is shift instruction
-output[1:0] ALUop;
-output I_format; 
+output I_format; //1 indicate the instruction is I-format except lw sw bne beq
+output[1:0] ALUop; //ALU operation code,used to distinguish format of instruction
 /* if the instruction is R-type or I_format, ALUOp is 2'b10;
 if the instruction is"beq" or "bne", ALUOp is 2'b01£»
 if the instruction is"lw" or "sw", ALUOp is 2'b00£»

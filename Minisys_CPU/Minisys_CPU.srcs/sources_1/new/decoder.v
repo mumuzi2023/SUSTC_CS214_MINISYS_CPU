@@ -21,21 +21,20 @@
 
 
 module decoder(instruction,clock,reset,jr,RegWrite,RegDST,MemorIOtoReg,jal,link_addr,alu_result,memorio_data,read_data_1,read_data_2,immediate_ext);
-
-input[31:0] instruction;
-input clock;
-input reset;
-input RegWrite;
+input[31:0] instruction;//from ifetch
+input clock;//from cpuclk
+input reset;//from cputop
+input RegWrite;//from controller
 input RegDST;// 1 indicate destination register is "rd"(R),otherwise it's "rt"(I)
-input MemorIOtoReg;
+input MemorIOtoReg;//signal of memory or io read 
 input jal;//jal need to write address to $ra
 input[31:0] link_addr; // from ifetch
 input[31:0] alu_result;//write data
 input[31:0] memorio_data;//ReadData from memory or io
-input jr;
-output[31:0] read_data_1;
-output[31:0] read_data_2;
-output[31:0] immediate_ext;
+input jr; // jr instruction signal
+output[31:0] read_data_1; // data from rs
+output[31:0] read_data_2; // data from rt
+output[31:0] immediate_ext; // immediate from instruction after extended to 32 bis
 
 wire[5:0] op = instruction[31:26];
 wire[4:0] rs = instruction[25:21];

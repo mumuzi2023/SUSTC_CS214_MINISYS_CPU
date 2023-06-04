@@ -23,6 +23,7 @@
 module clk_1k(uart_clk,clk_1k_hz,clk_led);
 input uart_clk;
 output clk_1k_hz,clk_led;
+
 reg [19:0] clk;
 always@(posedge uart_clk)
 begin

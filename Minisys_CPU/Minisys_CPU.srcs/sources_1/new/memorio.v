@@ -22,20 +22,18 @@
 
 module memorio(iodone,address,memread,memwrite,ioread,iowrite,memory_data,ioread_data,oridata,readdata,writedata,ledctrl,sigctrl,switchctrl,padctrl,led_tctrl,uart_ctrl);
 input iodone;// io is done
-input[31:0] address;
-input memread;
-input memwrite;
-input ioread;
-input iowrite;
-input[31:0] memory_data;
-input[15:0] ioread_data;
-input[31:0] oridata;
+input[31:0] address; // address from ALU 
+input memread; // from controller
+input memwrite;// from controller
+input ioread;// from controller
+input iowrite;// from controller
+input[31:0] memory_data;// from data memmory
+input[15:0] ioread_data; // from IO input
+input[31:0] oridata; // original output/write data
 output[31:0] readdata;// finally choice of mem or io data
-output[31:0] writedata;
-output ledctrl;
-output sigctrl;
-output switchctrl;
-output padctrl;
+output[31:0] writedata; // finally output/write data
+//control signal to input output devices
+output ledctrl,sigctrl,switchctrl,padctrl;
 output led_tctrl;
 output uart_ctrl;
 
