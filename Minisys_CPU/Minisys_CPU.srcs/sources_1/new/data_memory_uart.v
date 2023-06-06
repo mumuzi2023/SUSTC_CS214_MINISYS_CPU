@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module data_memory_uart( ram_clk_i,ram_wen_i,ram_adr_i,ram_dat_i,ram_dat_o,upg_rst_i,upg_clk_i,upg_wen_i,upg_adr_i,upg_dat_i,upg_done_i);
-
 input ram_clk_i; // from CPU top 
 input ram_wen_i; // from controller 
 input [13:0] ram_adr_i; // from alu_result of ALU 

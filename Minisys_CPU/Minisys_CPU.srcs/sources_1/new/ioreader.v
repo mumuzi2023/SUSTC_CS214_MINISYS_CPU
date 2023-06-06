@@ -21,14 +21,13 @@
 
 
 module ioreader(reset,ioread,switchctrl,padctrl,ioread_data_switch,ioread_data_pad,ioread_data);
-
 input reset;// reset
-input ioread;//from ctrl
+input ioread;//from controller
 input switchctrl;//from memorio
 input padctrl; //from memorop 
 input[15:0] ioread_data_switch;  //data from switch
-input[15:0] ioread_data_pad;
-output reg[15:0] ioread_data;    // to memorio
+input[15:0] ioread_data_pad; //data from pad
+output reg[15:0] ioread_data; // to memorio
    
 
    

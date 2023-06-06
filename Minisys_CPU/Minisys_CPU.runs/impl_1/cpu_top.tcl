@@ -60,28 +60,30 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
+  set_param synth.incrementalSynthesisCache C:/Users/27611/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18616-DESKTOP-9VRBO84/incrSyn
   create_project -in_memory -part xc7a100tfgg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/wt [current_project]
-  set_property parent.project_path D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr [current_project]
-  set_property ip_repo_paths D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/lib_addi_ip_core/SEU_CSE_507_user_uart_bmpg_1.3 [current_project]
-  set_property ip_output_repo D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/wt [current_project]
+  set_property parent.project_path D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.xpr [current_project]
+  set_property ip_repo_paths D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/lib_addi_ip_core/SEU_CSE_507_user_uart_bmpg_1.3 [current_project]
+  set_property ip_output_repo D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.dcp
-  read_ip -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/RAM/RAM.xci
-  read_ip -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/uart_bmpg_0/uart_bmpg_0.xci
-  read_ip -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/cpuclk/cpuclk.xci
-  read_ip -quiet D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci
-  read_xdc D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc
-  read_xdc D:/myCodes/vivado/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc
+  add_files -quiet D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.runs/synth_1/cpu_top.dcp
+  read_ip -quiet D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/RAM/RAM.xci
+  read_ip -quiet D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/uart_bmpg_0/uart_bmpg_0.xci
+  read_ip -quiet D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/cpuclk/cpuclk.xci
+  read_ip -quiet D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/sources_1/ip/prgrom/prgrom.xci
+  read_xdc D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/TEST_FOR_LED.xdc
+  read_xdc D:/computer_organization/SUSTC_CS214_MINISYS_CPU/Minisys_CPU/Minisys_CPU.srcs/constrs_1/new/top.xdc
   link_design -top cpu_top -part xc7a100tfgg484-1
   close_msg_db -file init_design.pb
 } RESULT]

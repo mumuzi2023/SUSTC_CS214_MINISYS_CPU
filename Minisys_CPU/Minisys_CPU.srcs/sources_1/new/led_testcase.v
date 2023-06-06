@@ -21,7 +21,6 @@
 
 
 module led_testcase(clk,rst,led_tctrl,wdata,led_light);
-
 input clk,rst;
 input led_tctrl;// means that the current station is io write(io presentation)
 input[2:0] wdata;// the data should be shown

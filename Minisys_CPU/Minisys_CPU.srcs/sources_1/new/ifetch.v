@@ -20,14 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
- module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
+module ifetch(Instruction_o, branch_base_addr, link_addr, cur_pc,Instruction_i,clock, reset, Addr_result, Read_data_1, Branch, nBranch, Jmp, Jal, Jr, Zero);
 output[31:0] Instruction_o; // the instruction fetched from this module to Decoder and Controller
 output[31:0] branch_base_addr; // (pc+4) to ALU which is used by branch type instruction
 output[31:0] link_addr; // (pc+4) to Decoder which is used by jal instruction
 output[31:0] cur_pc; // current PC value
 input[31:0] Instruction_i; // instruction from program memory
-//from CPU TOP
-input clock, reset; // Clock and reset
+input clock, reset; // Clock and reset,from CPU TOP
 // from ALU
 input[31:0] Addr_result; // the calculated address from ALU
 input Zero; // while Zero is 1, it means the ALUresult is zero
