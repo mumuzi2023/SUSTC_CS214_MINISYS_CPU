@@ -206,99 +206,99 @@
 
 #### 1. cpuclk（IP core）
 
-![image-20230604123929921](ISA architecture.assets\image-20230604123929921.png)
+![image-20230604123929921](images\image-20230604123929921.png)
 
 #### 2. clk_1k
 
-![image-20230604125024607](ISA architecture.assets\image-20230604125024607.png)
+![image-20230604125024607](images\image-20230604125024607.png)
 
 #### 3. controller
 
-![image-20230604124119395](ISA architecture.assets\image-20230604124119395-16858536844181.png)
+![image-20230604124119395](images\image-20230604124119395-16858536844181.png)
 
-![image-20230604131041409](ISA architecture.assets\image-20230604131041409.png)
+![image-20230604131041409](images\image-20230604131041409.png)
 
 #### 4. ifetch
 
-![image-20230604124219932](ISA architecture.assets\image-20230604124219932-16858537426053-16858537456405.png)
+![image-20230604124219932](images\image-20230604124219932-16858537426053-16858537456405.png)
 
-![image-20230604131321082](ISA architecture.assets\image-20230604131321082.png)
+![image-20230604131321082](images\image-20230604131321082.png)
 
 #### 5. decoder
 
-![image-20230604124405296](ISA architecture.assets\image-20230604124405296.png)
+![image-20230604124405296](images\image-20230604124405296.png)
 
-![image-20230604131855474](ISA architecture.assets\image-20230604131855474.png)
+![image-20230604131855474](images\image-20230604131855474.png)
 
 #### 6. execute
 
-![image-20230604124434057](ISA architecture.assets\image-20230604124434057.png)
+![image-20230604124434057](images\image-20230604124434057.png)
 
-![image-20230604132739261](ISA architecture.assets\image-20230604132739261.png)
+![image-20230604132739261](images\image-20230604132739261.png)
 
 #### 7. memorio
 
-![image-20230604124506269](ISA architecture.assets\image-20230604124506269.png)
+![image-20230604124506269](images\image-20230604124506269.png)
 
-![image-20230604132344217](ISA architecture.assets\image-20230604132344217.png)
+![image-20230604132344217](images\image-20230604132344217.png)
 
 #### 8. ioreader
 
-![image-20230604124526134](ISA architecture.assets\image-20230604124526134.png)
+![image-20230604124526134](images\image-20230604124526134.png)
 
-![image-20230604132432491](ISA architecture.assets\image-20230604132432491.png)
+![image-20230604132432491](images\image-20230604132432491.png)
 
 #### 9. data memory
 
-![image-20230604124645260](ISA architecture.assets\image-20230604124645260.png)
+![image-20230604124645260](images\image-20230604124645260.png)
 
-![image-20230604132510408](ISA architecture.assets\image-20230604132510408.png)
+![image-20230604132510408](images\image-20230604132510408.png)
 
 
 
 #### 10. program memory
 
-![image-20230604124614278](ISA architecture.assets\image-20230604124614278.png)
+![image-20230604124614278](images\image-20230604124614278.png)
 
-![image-20230604132558363](ISA architecture.assets\image-20230604132558363.png)
+![image-20230604132558363](images\image-20230604132558363.png)
 
 #### 11. uart （IP core）
 
-![image-20230604124946577](ISA architecture.assets\image-20230604124946577.png)
+![image-20230604124946577](images\image-20230604124946577.png)
 
 #### 12. button_decode
 
-![image-20230604125127435](ISA architecture.assets\image-20230604125127435.png)
+![image-20230604125127435](images\image-20230604125127435.png)
 
-![image-20230604133908813](ISA architecture.assets\image-20230604133908813.png)
+![image-20230604133908813](images\image-20230604133908813.png)
 
 #### 13. pad_decode & switch
 
-![image-20230604125307709](ISA architecture.assets\image-20230604125307709.png)
+![image-20230604125307709](images\image-20230604125307709.png)
 
-![image-20230604133117646](ISA architecture.assets\image-20230604133117646.png)
+![image-20230604133117646](images\image-20230604133117646.png)
 
-![image-20230604133322451](ISA architecture.assets\image-20230604133322451.png)
+![image-20230604133322451](images\image-20230604133322451.png)
 
 #### 14. led_test & led_light
 
-![image-20230604125458049](ISA architecture.assets\image-20230604125458049.png)
+![image-20230604125458049](images\image-20230604125458049.png)
 
-![image-20230604133447683](ISA architecture.assets\image-20230604133447683.png)
+![image-20230604133447683](images\image-20230604133447683.png)
 
-![image-20230604133413019](ISA architecture.assets\image-20230604133413019.png)
+![image-20230604133413019](images\image-20230604133413019.png)
 
 #### 15. sig_led
 
-![image-20230604125530873](ISA architecture.assets\image-20230604125530873.png)
+![image-20230604125530873](images\image-20230604125530873.png)
 
-![image-20230604133612877](ISA architecture.assets\image-20230604133612877.png)
+![image-20230604133612877](images\image-20230604133612877.png)
 
 #### 16. uart_tx
 
-![image-20230604135016670](ISA architecture.assets\image-20230604135016670.png)
+![image-20230604135016670](images\image-20230604135016670.png)
 
-![image-20230604133712059](ISA architecture.assets\image-20230604133712059.png)
+![image-20230604133712059](images\image-20230604133712059.png)
 
 
 
